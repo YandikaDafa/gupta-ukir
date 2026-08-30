@@ -5,43 +5,52 @@ function Produk() {
   const listProduk = [
     { 
       id: 1, 
-      nama: 'Black Garlic Original', 
-      harga: 'Rp 25.000', 
-      desc: 'Bawang putih tunggal yang difermentasi dengan suhu tinggi selama 30 hari.',
-      detail: 'Tekstur kenyal, rasa manis asam khas buah kering. Menggunakan bahan baku pilihan untuk efikasi kesehatan maksimal.',
-      netto: '100gr',
-      img: '/black-garlic1.png' 
+      nama: 'Relief Kayu Klasik', 
+      harga: 'Rp 2.500.000', 
+      desc: 'Ukiran dinding artistik dengan berbagai motif klasik dan kontemporer khas Bali.',
+      detail: 'Dikerjakan secara detail oleh perajin berpengalaman menggunakan kayu pilihan terbaik yang awet dan tahan lama.',
+      netto: 'Custom / Sesuai Ukuran',
+      img: './relief1.png' 
     },
     { 
       id: 2, 
-      nama: 'Black Garlic Premium', 
-      harga: 'Rp 50.000', 
-      desc: 'Ekstrak murni bawang hitam dalam bentuk bubuk halus.',
-      detail: 'Sangat praktis untuk campuran minuman kesehatan, smoothies, atau bahan masakan. Tetap menjaga nutrisi asli bawang hitam.',
-      netto: '200gr',
-      img: '/black-garlic2.png' 
+      nama: 'Loster Ukir Estetik', 
+      harga: 'Rp 150.000', 
+      desc: 'Ventilasi atau lubang angin berukir estetik untuk sirkulasi udara rumah yang elegan.',
+      detail: 'Cocok dipasang pada dinding rumah, villa, atau bangunan pura untuk menambah nilai estetika arsitektur tradisional.',
+      netto: 'Per Unit',
+      img: './relief2.png' 
     },
     { 
       id: 3, 
-      nama: 'Black Garlic Gold', 
-      harga: 'Rp 90.000', 
-      desc: 'Kualitas tertinggi dengan proses fermentasi double-check.',
-      detail: 'Kadar antioksidan lebih tinggi. Dikemas eksklusif dengan segel kedap udara untuk menjaga kesegaran hingga ke tangan Anda.',
-      netto: '250gr',
-      img: '/black-garlic3.png' 
+      nama: 'Ornamen Menur Bali', 
+      harga: 'Rp 350.000', 
+      desc: 'Ornamen ukiran khas tradisional Bali untuk pelengkap bangunan dan arsitektur.',
+      detail: 'Dipahat langsung dengan tangan (handmade) mencerminkan kekayaan seni ukir tradisional asal Tabanan.',
+      netto: 'Per Pcs / Set',
+      img: './ukirproduksi1.png' 
+    },
+    {
+      id: 4, 
+      nama: 'Ornamen Pemucuh Bali', 
+      harga: 'Rp 350.000', 
+      desc: 'Ornamen ukiran khas tradisional Bali untuk pelengkap bangunan dan arsitektur.',
+      detail: 'Dipahat langsung dengan tangan (handmade) mencerminkan kekayaan seni ukir tradisional asal Tabanan.',
+      netto: 'Per Pcs / Set',
+      img: './ukirproduk1.png' 
     }
   ];
 
   return (
     <div className="page-container">
       <nav className="navbar">
-        {/* Mengganti teks dengan tag gambar */}
         <Link to="/" className="logo-link">
           <img 
-            src="/logo-black-garlic.png" 
-            alt="Dewata Black Garlic" 
+            src="./logo-gupta-bali.png" 
+            alt="Gupta Bali Ukir D'Bali" 
             style={{ height: '50px', display: 'block' }} 
           />
+          <span className="logo-text">Gupta Bali Ukir D'Bali</span>
         </Link>
         
         <ul className="nav-links">
@@ -64,7 +73,7 @@ function Produk() {
       </nav>
 
       <div className="content-wrapper" style={{ paddingBottom: '50px' }}>
-        <h1 style={{ textAlign: 'center', marginBottom: '40px' }}>Katalog Produk</h1>
+        <h1 style={{ textAlign: 'center', marginBottom: '40px' }}>Katalog Produk Ukiran</h1>
         
         <div className="product-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px' }}>
           {listProduk.map((item) => (
@@ -73,15 +82,15 @@ function Produk() {
               <h3 style={{ color: '#bf9b30' }}>{item.nama}</h3>
               <p style={{ fontSize: '0.9rem', color: '#555', margin: '10px 0' }}>{item.desc}</p>
               
-              <div style={{ fontSize: '0.85rem', color: '#333', background: '#fcfaf6', padding: '10px', borderRadius: '8px', marginBottom: '15px' }}>
+              <div style={{ fontSize: '0.85rem', color: '#333', background: '#906309', padding: '10px', borderRadius: '8px', marginBottom: '15px' }}>
                 <p><strong>Detail:</strong> {item.detail}</p>
-                <p style={{ marginTop: '5px' }}><strong>Berat Bersih:</strong> {item.netto}</p>
+                <p style={{ marginTop: '5px' }}><strong>Kategori/Ukuran:</strong> {item.netto}</p>
               </div>
 
               <p className="price" style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#386641', textAlign: 'center' }}>{item.harga}</p>
               <button 
                 className="wa-btn" 
-                onClick={() => window.open(`https://wa.me/628135988482?text=Halo%20Dewata%20Black%20Garlic,%20saya%20mau%20pesan%20${item.nama}`)}
+                onClick={() => window.open(`https://wa.me/628135988482?text=Halo%20Gupta%20Bali%20Ukir,%20saya%20mau%20pesan%20${encodeURIComponent(item.nama)}`)}
               >
                 Pesan via WhatsApp
               </button>

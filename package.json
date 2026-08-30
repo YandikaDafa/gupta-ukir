@@ -1,17 +1,17 @@
 {
-  "name": "katalog-black-garlic",
-  "homepage": "https://[YandikaDafa].github.io/katalog-black-garlic",
+  "name": "Gupta Bali Ukir",
+  "homepage": "https://YandikaDafa.github.io/GuptaBaliUkir",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
+  "dev": "vite",
+  "build": "vite build",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -f -d dist", 
+  "lint": "eslint .",
+  "preview": "vite preview"
+},
   "dependencies": {
     "react": "^19.2.6",
     "react-dom": "^19.2.6",

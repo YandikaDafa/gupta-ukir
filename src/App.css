@@ -3,37 +3,90 @@
 body { background-color: #fcfaf6; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333; }
 
 /* --- Navbar --- */
-.navbar { background: #1c1c1c; color: #fff; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; }
+.navbar { background: #1c1c1c; color: #9f0606; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; }
 .nav-links { display: flex; list-style: none; gap: 20px; }
-.nav-links a { color: white; text-decoration: none; font-weight: 500; }
-/* Tambahkan ini di bawah section Navbar */
+.nav-links a { color: white; text-decoration: none; font-weight: 500; transition: color 0.2s; }
+.nav-links a:hover { color: #fffffe; }
+
 .nav-links a.nav-active { 
   color: #ffffff !important; 
   border-bottom: 2px solid #bf9b30; 
   padding-bottom: 5px;
 }
 
+/* --- Styling Dropdown Navbar --- */
+.nav-links {
+  position: relative;
+}
+
+.nav-links li.dropdown {
+  position: relative;
+}
+
+/* Sembunyikan sub-menu secara default */
+.nav-links .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #1c1c1c;
+  min-width: 160px;
+  list-style: none;
+  padding: 10px 0;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  border-radius: 6px;
+  border: 1px solid #333;
+  z-index: 999;
+}
+
+/* Tampilkan sub-menu saat kursor diarahkan ke li.dropdown */
+.nav-links li.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Styling link di dalam dropdown */
+.dropdown-menu li a {
+  display: block;
+  padding: 8px 16px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  transition: background 0.2s, color 0.2s;
+}
+
+.dropdown-menu li a:hover {
+  background: #bf9b30;
+  color: #1c1c1c !important;
+  border-bottom: none !important;
+  padding-bottom: 8px !important;
+}
+
 /* --- Hero Section --- */
-.hero { text-align: center; padding: 3rem 1rem; }
+.hero { text-align: center; padding: 3rem 1rem; background: #f4f3ec; border-bottom: 1px solid #eaddc7; }
+.hero h1 { color: #1c1c1c; margin-bottom: 10px; }
+.hero p { color: #555; }
 
 /* --- Product Grid --- */
 .product-grid { 
   display: grid; 
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-  gap: 20px; 
-  padding: 0 5% 60px 5%; 
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+  gap: 25px; 
+  padding: 40px 5% 60px 5%; 
   max-width: 1200px; 
   margin: 0 auto; 
 }
-.card { background: white; padding: 20px; border-radius: 15px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-.card-img { width: 100%; height: 200px; object-fit: contain; margin-bottom: 15px; }
+.card { background: white; padding: 20px; border-radius: 15px; text-align: left; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #eaddc7; display: flex; flex-direction: column; }
+.card-img { width: 100%; height: 220px; object-fit: contain; margin-bottom: 15px; background: #faf9f5; border-radius: 8px; }
+.card h3 { color: #1c1c1c; margin-bottom: 8px; font-size: 1.2rem; }
+.price { font-size: 1.25rem; font-weight: bold; color: #386641; margin: 10px 0; }
 .wa-btn { 
   background: #386641; color: white; border: none; padding: 12px; width: 100%; 
-  border-radius: 8px; cursor: pointer; font-weight: bold; margin-top: 10px; transition: background 0.3s;
+  border-radius: 8px; cursor: pointer; font-weight: bold; margin-top: auto; transition: background 0.3s;
 }
 .wa-btn:hover { background: #2a4d31; }
 
-/* --- Section: Kenapa Harus Black Garlic --- */
+/* --- Section: Keunggulan / Mengapa Kami --- */
 .why-section { padding: 60px 5%; text-align: center; background-color: #ffffff; }
 .why-grid { 
   display: grid; 
@@ -42,7 +95,7 @@ body { background-color: #fcfaf6; font-family: 'Segoe UI', Tahoma, Geneva, Verda
   max-width: 1000px; 
   margin: 40px auto 0; 
 }
-.why-item { padding: 25px; background: #fcfaf6; border-radius: 12px; transition: transform 0.3s ease; }
+.why-item { padding: 25px; background: #fcfaf6; border-radius: 12px; border: 1px solid #eaddc7; transition: transform 0.3s ease; }
 .why-item:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
 
 /* --- Section: Testimoni --- */
@@ -54,22 +107,52 @@ body { background-color: #fcfaf6; font-family: 'Segoe UI', Tahoma, Geneva, Verda
 .testimoni-card { 
   flex: 0 0 300px; background: white; padding: 25px; border-radius: 15px; 
   box-shadow: 0 4px 10px rgba(0,0,0,0.05); border-left: 5px solid #bf9b30; 
-  scroll-snap-align: start; 
+  scroll-snap-align: start; border-top: 1px solid #eaddc7; border-right: 1px solid #eaddc7; border-bottom: 1px solid #eaddc7;
 }
 .testimoni-card p { font-style: italic; margin-bottom: 15px; color: #4a4a4a; }
+.testimoni-card h4 { color: #1c1c1c; font-size: 0.95rem; }
 
-/* --- Halaman Tentang Kami --- */
-.page-container { min-height: 100vh; padding-bottom: 50px; }
-.content-wrapper { max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.8; }
-.title { color: #1c1c1c; font-size: 2.5rem; margin-bottom: 20px; }
+/* --- Halaman Tentang Kami & Produk Detail --- */
+.page-container { min-height: 100vh; padding-bottom: 50px; background-color: #fcfaf6; }
+.content-wrapper { max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.8; text-align: left; }
+.title { color: #1c1c1c; font-size: 2.2rem; margin-bottom: 20px; text-align: center; }
+.intro { color: #4a4a4a; font-size: 1.1rem; margin-bottom: 25px; }
+.section-title { color: #1c1c1c; font-size: 1.5rem; margin-top: 30px; margin-bottom: 15px; }
+.list-title { color: #1c1c1c; font-size: 1.2rem; margin-top: 25px; margin-bottom: 10px; }
+.benefit-list { padding-left: 20px; color: #4a4a4a; }
+.benefit-list li { margin-bottom: 8px; }
+
 .info-box { 
-  background-color: #f8f4e6; padding: 30px; border-radius: 15px; 
-  border-left: 5px solid #386641; margin-top: 30px; 
+  background-color: #e7b500; padding: 30px; border-radius: 15px; 
+  border-left: 5px solid #386641; margin-top: 30px; border-top: 1px solid #eaddc7; border-right: 1px solid #eaddc7; border-bottom: 1px solid #eaddc7;
 }
-.contact-cta a { color: #386641; text-decoration: none; border-bottom: 2px solid #386641; }
+.info-box h3 { color: #1c1c1c; margin-bottom: 10px; }
+.info-box p { color: #4a4a4a; margin-bottom: 10px; }
+.contact-cta a { color: #386641; text-decoration: none; font-weight: bold; border-bottom: 2px solid #386641; }
 
-/* --- Responsive --- */
-@media (max-width: 600px) {
-  .nav-links { gap: 10px; font-size: 0.9rem; }
+/* --- Navbar Branding Layout --- */
+.logo-link { 
+  display: flex; 
+  align-items: center; 
+  gap: 12px; 
+  text-decoration: none; 
+}
+
+.logo-text {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #160303;
+  letter-spacing: 0.5px;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+  .navbar { flex-direction: column; gap: 15px; padding: 1rem; }
+  .nav-links { gap: 15px; font-size: 0.95rem; }
+}
+
+@media (max-width: 480px) {
+  .logo-text { display: none; }
+  .nav-links { gap: 10px; font-size: 0.85rem; }
   .title { font-size: 1.8rem; }
 }

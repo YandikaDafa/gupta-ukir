@@ -5,13 +5,14 @@ function TentangKami() {
   return (
     <div className="page-container">
       <nav className="navbar">
-        {/* Logo sebagai link ke Beranda */}
+        {/* Menggunakan path relatif agar gambar selalu ditemukan */}
         <Link to="/" className="logo-link">
           <img 
-            src="/logo-black-garlic.png" 
-            alt="Dewata Black Garlic" 
+            src="./logo-gupta-bali.png" 
+            alt="Gupta Bali Ukir D'Bali" 
             style={{ height: '50px', display: 'block' }} 
           />
+          <span className="logo-text">Gupta Bali Ukir D'Bali</span>
         </Link>
         
         <ul className="nav-links">
@@ -34,29 +35,27 @@ function TentangKami() {
       </nav>
 
       <div className="content-wrapper">
-        <h1 className="title">Tentang Dewata Black Garlic</h1>
+        <h1 className="title">Tentang Gupta Bali Ukir D'Bali</h1>
         <p className="intro">
-          Didirikan pada <strong>12 November 2025</strong>, <strong>Dewata Black Garlic</strong> hadir dengan dedikasi penuh untuk menghadirkan solusi kesehatan alami bagi keluarga Indonesia.
+          Didirikan pada tahun <strong>2009</strong>, <strong>Gupta Bali Ukir d'Bali</strong> berlokasi di <strong>Br. Dinas Jakatebel, Desa Tangguntiti, Kec. Selemadeg Timur, Kab. Tabanan</strong>, hadir dengan dedikasi penuh untuk melestarikan dan menghadirkan karya seni ukir kayu berkualitas tinggi khas Bali.
         </p>
 
-        <h2 className="section-title">Mengapa Memilih Produk Kami?</h2>
-        <p>Black Garlic kami diproses melalui fermentasi alami dengan kontrol suhu dan kelembapan yang presisi untuk hasilkan kualitas antioksidan terbaik.</p>
+        <h2 className="section-title">Mengapa Memilih Ukiran Kami?</h2>
+        <p>Setiap produk ukiran dikerjakan secara teliti oleh perajin berpengalaman menggunakan kayu pilihan terbaik, menghasilkan detail seni yang bernilai tinggi dan tahan lama untuk memperindah bangunan Anda.</p>
 
-        <h3 className="list-title">Manfaat Utama untuk Kesehatan Anda:</h3>
+        <h3 className="list-title">Berbagai Produk & Layanan Ukiran Kami:</h3>
         <ul className="benefit-list">
-          <li>Meningkatkan sistem kekebalan tubuh secara alami.</li>
-          <li>Membantu menurunkan kadar kolesterol jahat (LDL).</li>
-          <li>Menjaga kesehatan jantung dan pembuluh darah.</li>
-          <li>Membantu mengatur kadar gula darah.</li>
-          <li>Melawan risiko peradangan.</li>
-          <li>Membantu meredakan keluhan asam urat.</li>
+          <li><strong>Relief:</strong> Ukiran dinding artistik dengan berbagai motif klasik dan kontemporer.</li>
+          <li><strong>Loster:</strong> Ventilasi atau lubang angin berukir estetik untuk sirkulasi udara rumah yang elegan.</li>
+          <li><strong>Menur:</strong> Ornamen ukiran khas tradisional Bali untuk pelengkap bangunan dan arsitektur.</li>
+          <li>Menerima pesanan berbagai jenis ukiran kayu custom sesuai kebutuhan Anda.</li>
         </ul>
 
         <div className="info-box">
-          <h3>Saran Konsumsi</h3>
-          <p>Konsumsi langsung <strong>2-3 butir setiap hari</strong>. 100% alami dan tanpa bahan pengawet.</p>
+          <h3>Informasi & Pemesanan</h3>
+          <p>Konsultasikan kebutuhan ukiran Anda bersama kami. 100% karya seni ukir tangan asli Bali.</p>
           <p className="contact-cta">
-            Butuh konsultasi? Hubungi kami via WhatsApp: 
+            Tertarik memesan? Hubungi kami via WhatsApp: 
             <a href="https://wa.me/628135988482" target="_blank" rel="noopener noreferrer"> 08135988482</a>
           </p>
         </div>
