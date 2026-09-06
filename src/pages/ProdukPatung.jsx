@@ -91,34 +91,86 @@ function ProdukPatung() {
       detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
       kategori: 'Custom / 1 Set',
       harga: 'Rp 700.000',
-      img: './brahmawisnu.png' 
+      img: './sungsang.png' 
     },
     { 
       id: 11, 
-      judul: 'Patung Jangger', 
+      judul: 'Patung Ganesha Polos', 
       desc: 'Karya seni ukir patung yang menghadirkan suasana tenang, damai, dan estetis untuk sudut interior.', 
       detail: 'Dipahat dengan penuh ketenangan, sangat ideal untuk menghiasi Sudut Rumah.',
       kategori: 'Per Unit',
       harga: 'Rp 1.200.000',
-      img: './patungjangger.png' 
+      img: './ganeshapolos.png' 
     },
     { 
       id: 12, 
-      judul: 'Patung Relief Kayu Tradisional', 
+      judul: 'Patung Ayam Tinggi 60cm', 
       desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
       detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
       kategori: 'Custom / Per Set',
-      harga: 'Rp 4.000.000',
-      img: './relief1.png' 
+      harga: 'Rp 600.000',
+      img: './ayam1.png' 
     },
     { 
       id: 13, 
-      judul: 'Patung f Kayu Tradisional', 
+      judul: 'Patung Ayam Tinggi 60cm', 
       desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
       detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
       kategori: 'Custom / Per Set',
-      harga: 'Rp 4.000.000',
-      img: './relief1.png' 
+      harga: 'Rp 600.000',
+      img: './ayam2.png' 
+    },
+    { 
+      id: 14, 
+      judul: 'Patung Ganesha Cream & Prada', 
+      desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
+      detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
+      kategori: 'Custom / Per Set',
+      harga: 'Rp 2.500.000',
+      img: './ganeshacreamprada.png' 
+    },{ 
+      id: 15, 
+      judul: 'Patung Hanuman Tinggi 80cm', 
+      desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
+      detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
+      kategori: 'Custom / 1 Set',
+      harga: 'Rp 600.000',
+      img: './hanuman.png' 
+    },
+    { 
+      id: 16, 
+      judul: 'Patung Singadari Tinggi 40cm', 
+      desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
+      detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
+      kategori: 'Custom / 1 Set',
+      harga: 'Rp 500.000',
+      img: './singadari.png' 
+    },
+    { 
+      id: 17, 
+      judul: 'Patung Raksasa Polos Tinggi 1meter', 
+      desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
+      detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
+      kategori: 'Custom / 1 Set',
+      harga: 'Rp 1.100.000',
+      img: './raksasapolos.png' 
+    },{ 
+      id: 18, 
+      judul: 'Patung Singa Menegah Cat Batu', 
+      desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
+      detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
+      kategori: 'Custom / 1 Set',
+      harga: 'Rp 500.000',
+      img: './menegah.png' 
+    },
+    { 
+      id: 19, 
+      judul: 'Patung Macan Tinggi 80cm', 
+      desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
+      detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
+      kategori: 'Custom / 1 Set',
+      harga: 'Rp 1.500.000',
+      img: './macan.png' 
     }
   ];
 
