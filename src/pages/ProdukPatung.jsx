@@ -127,7 +127,7 @@ function ProdukPatung() {
       detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
       kategori: 'Custom / Per Set',
       harga: 'Rp 2.500.000',
-      img: './ganeshacreamprada.png' 
+      img: './ganeshacream.png' 
     },{ 
       id: 15, 
       judul: 'Patung Hanuman Tinggi 80cm', 
