@@ -1,4 +1,4 @@
-/* Styling Tambahan untuk Navbar, Katalog Produk, dan Testimoni */
+/* --- Styling Navbar & Tata Letak --- */
 
 .page-container,
 .container {
@@ -18,12 +18,6 @@
   top: 0;
   z-index: 100;
   box-sizing: border-box;
-
-  @media (max-width: 768px) {
-    padding: 15px 20px;
-    flex-direction: column;
-    gap: 15px;
-  }
 }
 
 .logo-link {
@@ -38,6 +32,7 @@
   font-weight: 600;
   font-size: 20px;
   color: var(--text-h);
+  white-space: nowrap;
 }
 
 .nav-links {
@@ -46,206 +41,69 @@
   gap: 30px;
   margin: 0;
   padding: 0;
-
-  a {
-    text-decoration: none;
-    color: var(--text);
-    font-weight: 500;
-    transition: color 0.2s ease;
-
-    &:hover,
-    &.nav-active {
-      color: var(--accent);
-    }
-  }
+  align-items: center;
 }
 
-.hero {
-  padding: 60px 20px;
-  text-align: center;
-  background: var(--code-bg);
-  border-bottom: 1px solid var(--border);
-
-  p {
-    font-size: 1.1rem;
-    color: var(--text);
-    max-width: 600px;
-    margin: 0 auto;
-  }
-}
-
-.content-wrapper {
-  padding: 40px 20px;
-  flex: 1;
-  text-align: left;
-  max-width: 1000px;
-  margin: 0 auto;
-  width: 100%;
-  box-sizing: border-box;
-
-  .title {
-    text-align: center;
-  }
-}
-
-.intro {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 30px;
+.nav-links a {
+  text-decoration: none;
   color: var(--text);
-}
-
-.section-title {
-  margin-top: 40px;
-  margin-bottom: 16px;
-}
-
-.list-title {
-  font-family: var(--heading);
-  font-size: 18px;
-  color: var(--text-h);
-  margin: 24px 0 12px;
-}
-
-.benefit-list {
-  margin: 0 0 30px;
-  padding-left: 20px;
-
-  li {
-    margin-bottom: 10px;
-    line-height: 1.5;
-  }
-}
-
-.info-box {
-  background: var(--code-bg);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 24px;
-  margin-top: 30px;
-
-  h3 {
-    margin-top: 0;
-    margin-bottom: 12px;
-    color: var(--text-h);
-  }
-
-  p {
-    margin-bottom: 12px;
-  }
-}
-
-.contact-cta {
   font-weight: 500;
-
-  a {
-    color: var(--accent);
-    text-decoration: none;
-    font-weight: 600;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
+  transition: color 0.2s ease;
 }
 
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  padding: 40px 20px;
-  max-width: 1100px;
-  margin: 0 auto;
-  box-sizing: border-box;
+.nav-links a:hover,
+.nav-links a.nav-active {
+  color: var(--accent);
 }
 
-.card {
+/* --- Dropdown Styling --- */
+.nav-links li.dropdown {
+  position: relative;
+}
+
+.nav-links .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
   background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 20px;
-  text-align: left;
-  box-shadow: var(--shadow);
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.2s ease;
-
-  &:hover {
-    transform: translateY(-4px);
-  }
-
-  h3 {
-    margin: 15px 0 8px;
-    color: var(--text-h);
-    font-size: 20px;
-  }
-}
-
-.card-img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 8px;
-  background-color: var(--code-bg);
-}
-
-.price {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: var(--text-h);
-  margin: 10px 0 20px;
-}
-
-.wa-btn {
-  background-color: var(--accent);
-  color: #1a0101;
-  border: none;
+  min-width: 160px;
+  list-style: none;
+  padding: 10px 0;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   border-radius: 6px;
-  padding: 12px 20px;
-  font-family: var(--sans);
-  font-weight: 600;
-  cursor: pointer;
-  transition: opacity 0.2s ease;
-  width: 100%;
-  margin-top: auto;
-
-  &:hover {
-    opacity: 0.9;
-  }
-}
-
-.testimoni-section {
-  padding: 60px 20px;
-  background-color: var(--social-bg);
-  border-top: 1px solid var(--border);
-}
-
-.testimoni-scroll {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.testimoni-card {
-  background: var(--bg);
   border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 20px;
-  text-align: left;
-  box-shadow: var(--shadow);
+  z-index: 999;
+}
 
-  p {
-    font-style: italic;
-    margin-bottom: 15px;
-    color: var(--text);
+.nav-links li.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 8px 16px;
+  color: var(--text);
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.dropdown-menu li a:hover {
+  background: var(--accent);
+  color: var(--bg) !important;
+}
+
+/* --- Responsif Navbar --- */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+    flex-direction: column;
+    gap: 15px;
   }
-
-  h4 {
-    margin: 0;
-    color: var(--text-h);
-    font-size: 14px;
-    font-weight: 600;
+  
+  .nav-links {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
