@@ -19,7 +19,7 @@ function ProdukPatung() {
       detail: 'Cocok dipasang di gerbang utama rumah, villa, atau pura untuk memberikan perlindungan dan estetika tradisional.',
       kategori: 'Sepasang (2 Pcs)',
       harga: 'Rp 900.000',
-      img: './patungbg.png' 
+      img: './brahmawisnucream.png' 
     },
     { 
       id: 3, 
