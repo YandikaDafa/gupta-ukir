@@ -29,6 +29,58 @@ function ProdukLoster() {
       kategori: 'Per Unit / Set',
       harga: 'Rp 200.000',
       img: './relief1.png' 
+    },{ 
+      id: 4, 
+      judul: 'Loster Ukir Klasik Bali', 
+      desc: 'Ventilasi atau lubang angin berukir estetik untuk sirkulasi udara rumah yang elegan.', 
+      detail: 'Cocok dipasang pada dinding rumah, villa, atau bangunan tradisional untuk menambah nilai estetika.',
+      kategori: 'Per Unit',
+      harga: 'Rp 150.000',
+      img: './relief2.png' 
+    },
+    { 
+      id: 5, 
+      judul: 'Loster Motif Flora Kayu Jati', 
+      desc: 'Lubang angin dengan pahatan motif dedaunan khas Bali yang rapi dan detail.', 
+      detail: 'Dibuat dari bahan kayu jati pilihan yang tahan terhadap cuaca luar ruangan.',
+      kategori: 'Per Unit',
+      harga: 'Rp 175.000',
+      img: './ukirproduk1.png' 
+    },
+    { 
+      id: 6, 
+      judul: 'Loster Geometris Tradisional', 
+      desc: 'Kombinasi ornamen tradisional dan rongga udara optimal untuk kesejukan ruangan.', 
+      detail: 'Pahatan tangan pengrajin profesional asal Tabanan dengan hasil akhir yang halus.',
+      kategori: 'Per Unit / Set',
+      harga: 'Rp 200.000',
+      img: './relief1.png' 
+    },{ 
+      id: 7, 
+      judul: 'Ukiran Pojok', 
+      desc: 'Ventilasi atau lubang angin berukir estetik untuk sirkulasi udara rumah yang elegan.', 
+      detail: 'Cocok dipasang pada dinding rumah, villa, atau bangunan tradisional untuk menambah nilai estetika.',
+      kategori: 'Per Unit',
+      harga: 'Rp 110.000',
+      img: './pojok.png' 
+    },
+    { 
+      id: 8, 
+      judul: 'Cup Lampu Ukir Klasik Bali', 
+      desc: ': Dibuat dengan detail ukiran tangan yang rapi dan artistik.Menghadirkan atmosfer Bali yang hangat, elegan, dan eksotis di dalam rumah.', 
+      detail: 'Pola ukiran menciptakan bias cahaya yang indah saat lampu dinyalakan.',
+      kategori: 'Per Unit',
+      harga: 'Rp 100.000',
+      img: './cuplampu.png' 
+    },
+    { 
+      id: 9, 
+      judul: 'Loster Ukir Bunga Klasik Bali', 
+      desc: 'Loster Ukir Bunga Klasik Bali merupakan ornamen ventilasi udara yang menampilkan motif bunga khas Bali dengan detail pahatan tangan yang halus dan artistik.', 
+      detail: 'Pahatan tangan pengrajin profesional dengan hasil akhir yang halus.',
+      kategori: 'Per Unit / 1pcs',
+      harga: 'Rp 60.000',
+      img: './losterbunga.png' 
     }
   ];
 
