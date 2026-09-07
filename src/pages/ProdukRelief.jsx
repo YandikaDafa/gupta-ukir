@@ -5,57 +5,57 @@ function ProdukRelief() {
   const daftarRelief = [
     { 
       id: 1, 
-      judul: 'Relief Kayu Klasik', 
-      desc: 'Ukiran dinding artistik dengan berbagai motif klasik dan kontemporer khas Bali.', 
-      detail: 'Dikerjakan secara detail oleh perajin berpengalaman menggunakan kayu pilihan terbaik yang awet dan tahan lama.',
-      kategori: 'Custom / Sesuai Ukuran',
-      harga: 'Rp 2.500.000',
-      img: './relief1.png' 
+      judul: 'Relief Ukir Flora', 
+      desc: 'Ukiran dinding artistik dengan motif flora khas Bali.', 
+      detail: 'Cocok dipasang pada dinding rumah, villa, atau bangunan pura untuk menambah nilai estetika arsitektur tradisional.',
+      kategori: 'Custom / 1pcs',
+      harga: 'Rp 1.300.000',
+      img: './reliefflora.png' 
     },
     { 
       id: 2, 
-      judul: 'Relief Ukiran Ukuran Sedang', 
-      desc: 'Ventilasi atau lubang angin berukir estetik untuk sirkulasi udara rumah yang elegan.', 
-      detail: 'Cocok dipasang pada dinding rumah, villa, atau bangunan pura untuk menambah nilai estetika arsitektur tradisional.',
-      kategori: 'Per Unit',
-      harga: 'Rp 150.000',
-      img: './relief2.png' 
+      judul: 'Relief Cerita Ramayana', 
+      desc: 'Hadirkan keindahan dan filosofi epos klasik nusantara ke dalam ruangan Anda melalui Panel Relief Kayu "Rama & Sinta di Hutan Suci".', 
+      detail: 'Hiasan dinding interior, koleksi seni budaya, dekorasi ruang bergaya etnik/resort.',
+      kategori: '1pcs',
+      harga: 'Rp 1.500.000',
+      img: './relieframasinta.png' 
     },
     { 
       id: 3, 
-      judul: 'Relief Ukuran Besar dan Menengah', 
-      desc: 'Ornamen ukiran khas tradisional Bali untuk pelengkap bangunan dan arsitektur.', 
-      detail: 'Dipahat langsung dengan tangan (handmade) mencerminkan kekayaan seni ukir tradisional asal Tabanan.',
-      kategori: 'Per Pcs / Set',
-      harga: 'Rp 350.000',
-      img: './ukirproduk1.png' 
+      judul: 'Ramayana Wooden Relief', 
+      desc: 'Karya seni pahat tiga dimensi (3D) berukuran vertikal ini menggambarkan adegan dramatis saat Sang Rama bersiap dengan busurnya di tengah hutan lebat yang rindang.',
+      detail: 'Panel vertikal ini sangat ideal dipasang sebagai focal point di dinding ruang tamu, koridor galeri, pilar rumah mewah, maupun hotel dan vila berkonsep etnik nusantara.',
+      kategori: 'Custom / 1pcs',
+      harga: 'Rp 500.000',
+      img: './ramayana.png' 
     },
     { 
       id: 4, 
-      judul: 'Relief Kayu Klasik', 
-      desc: 'Ukiran dinding artistik dengan berbagai motif klasik dan kontemporer khas Bali.', 
-      detail: 'Dikerjakan secara detail oleh perajin berpengalaman menggunakan kayu pilihan terbaik yang awet dan tahan lama.',
-      kategori: 'Custom / Sesuai Ukuran',
-      harga: 'Rp 2.500.000',
-      img: './relief1.png' 
+      judul: 'Panel Ukiran Patra Punggel', 
+      desc: 'Motif patra punggel dikenal dengan garis lengkung spiralnya yang mengalir dinamis, melambangkan keharmonisan dan dinamika alam.', 
+      detail: 'Dibuat dengan teknik ukir tangan (hand-carved) penuh ketelitian oleh pengrajin lokal Bali, panel ini memiliki kedalaman relief 3D yang sangat elegan dengan latar bertekstur khas.',
+      kategori: 'Per Pcs',
+      harga: 'Rp 90.000',
+      img: './patrapunggel.png' 
     },
     { 
       id: 5, 
-      judul: 'Relief Ukiran Ukuran Sedang', 
-      desc: 'Ventilasi atau lubang angin berukir estetik untuk sirkulasi udara rumah yang elegan.', 
-      detail: 'Cocok dipasang pada dinding rumah, villa, atau bangunan pura untuk menambah nilai estetika arsitektur tradisional.',
-      kategori: 'Per Unit',
-      harga: 'Rp 150.000',
-      img: './relief2.png' 
+      judul: 'Ornamen Kayu Motif Patra Punggel', 
+      desc: 'Terdiri dari panel-panel vertikal dengan motif ukiran daun melingkar (patra punggel) yang simetris dan mengalir dinamis, menciptakan kesan elegan serta artistik.', 
+      detail: 'Dibuat secara manual oleh pengrajin ukir tangan (hand-carved) profesional dengan tingkat presisi yang tinggi, produk ini sangat cocok digunakan sebagai pelapis pilar/tiang rumah, dekorasi lobi hotel, restoran, maupun galeri seni berkonsep etnik tropis.',
+      kategori: 'Per Pcs',
+      harga: 'Rp 50.000',
+      img: './motifpatrapunggel.png' 
     },
     { 
       id: 6, 
-      judul: 'Relief Ukuran Besar dan Menengah', 
-      desc: 'Ornamen ukiran khas tradisional Bali untuk pelengkap bangunan dan arsitektur.', 
-      detail: 'Dipahat langsung dengan tangan (handmade) mencerminkan kekayaan seni ukir tradisional asal Tabanan.',
-      kategori: 'Per Pcs / Set',
-      harga: 'Rp 350.000',
-      img: './ukirproduk1.png' 
+      judul: 'Balinese Carved Pillar Panel', 
+      desc: 'Terbuat dari kayu pilihan berkualitas tinggi, set panel ini menampilkan keindahan ukiran tangan tradisional khas Bali dengan pola daun melingkar yang mengalir dinamis dan simetris.', 
+      detail: 'Dikerjakan sepenuhnya oleh pengrajin lokal berpengalaman, setiap detail ukiran 3D dipahat dengan presisi tinggi untuk menghadirkan kesan mewah, elegan, dan etnik. Sangat ideal diaplikasikan sebagai pelapis pilar/tiang bangunan, dekorasi sudut ruangan, pilar lobi hotel, restoran, maupun hunian bergaya tropis modern.',
+      kategori: 'Per Pcs',
+      harga: 'Rp 65.000',
+      img: './balinesecarved.png' 
     }
   ];
 
