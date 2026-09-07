@@ -171,6 +171,102 @@ function ProdukPatung() {
       kategori: 'Custom / 1 Set',
       harga: 'Rp 1.500.000',
       img: './macan.png' 
+    },{ 
+      id: 20, 
+      judul: 'Patung Ganesha Tinggi 130cm', 
+      desc: 'Karya seni ukir patung yang menghadirkan suasana tenang, damai, dan estetis untuk sudut interior tinggi 90cm.', 
+      detail: 'Dipahat dengan penuh ketenangan, sangat ideal untuk menghiasi Sudut Rumah.',
+      kategori: 'Per Unit',
+      harga: 'Rp 3.000.000',
+      img: './ganeshatinggi.png' 
+    },
+    { 
+      id: 21, 
+      judul: 'Patung Angsa ', 
+      desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
+      detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
+      kategori: 'Custom / 1 Set',
+      harga: 'Rp 700.000',
+      img: './angsa.png' 
+    },
+    { 
+      id: 22, 
+      judul: 'Patung Singa Cat warna Tinggi 40cm', 
+      desc: 'Karya seni ukir patung yang menghadirkan suasana tenang, damai, dan estetis untuk sudut interior.', 
+      detail: 'Dipahat dengan penuh ketenangan, sangat ideal untuk menghiasi Sudut Rumah.',
+      kategori: 'Per Unit',
+      harga: 'Rp 1.200.000',
+      img: './singacat.png' 
+    },
+    { 
+      id: 23, 
+      judul: 'Singa Menengah Polos', 
+      desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
+      detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
+      kategori: 'Custom / 1 Set',
+      harga: 'Rp 300.000',
+      img: './singamenengah.png' 
+    },
+    { 
+      id: 24, 
+      judul: 'Patung Megambel Polos', 
+      desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
+      detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
+      kategori: 'Custom /  1pcs',
+      harga: 'Rp 500.000',
+      img: './megambelpolos.png' 
+    },
+    { 
+      id: 25, 
+      judul: 'Patung Megambel Cat ', 
+      desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
+      detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
+      kategori: 'Custom / 1 Set',
+      harga: 'Rp 700.000',
+      img: './megambelcat.png' 
+    },{ 
+      id: 26, 
+      judul: 'Patung Rangda Tinggi 1meter', 
+      desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
+      detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
+      kategori: 'Custom / 1 Set',
+      harga: 'Rp 3.000.000',
+      img: './rangda.png' 
+    },
+    { 
+      id: 27, 
+      judul: 'Patung Hanuman Tinggi 80cm', 
+      desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
+      detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
+      kategori: 'Custom / 1 Set',
+      harga: 'Rp 1.100.000',
+      img: './hanumancat.png' 
+    },
+    { 
+      id: 28, 
+      judul: 'Patung Hanuman Tinggi 1meter', 
+      desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
+      detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
+      kategori: 'Custom / 1 Set',
+      harga: 'Rp 1.100.000',
+      img: './hanuman1meter.png' 
+    },{ 
+      id: 29, 
+      judul: 'Patung Kakek Tinggi 60cm ', 
+      desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
+      detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
+      kategori: 'Custom / 1pcs',
+      harga: 'Rp 400.000',
+      img: './kakek.png' 
+    },
+    { 
+      id: 30, 
+      judul: 'Patung Nenek 60cm', 
+      desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
+      detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
+      kategori: 'Custom / 1pcs',
+      harga: 'Rp 1.500.000',
+      img: './nenek.png' 
     }
   ];
 
@@ -218,10 +314,10 @@ function ProdukPatung() {
       {/* Header Halaman Patung */}
       <header style={{ textAlign: 'center', padding: '60px 20px 40px', maxWidth: '800px', margin: '0 auto' }}>
         <h1 style={{ color: '#d4af37', fontSize: '2.8rem', fontFamily: 'serif', marginBottom: '15px' }}>
-          Koleksi Patung Kayu Bali
+          Koleksi Patung
         </h1>
         <p style={{ color: '#cccccc', fontSize: '1.1rem', lineHeight: '1.6' }}>
-          Mahakarya seni pahat patung tradisional Bali hasil karya tangan perajin berpengalaman di Tabanan, memberikan nilai estetika tinggi dan sakral untuk interior maupun eksterior bangunan Anda.
+          Mahakarya seni pahat patung tradisional Bali hasil karya tangan perajin berpengalaman, memberikan nilai estetika tinggi dan sakral untuk interior maupun eksterior bangunan Anda.
         </p>
       </header>
 
