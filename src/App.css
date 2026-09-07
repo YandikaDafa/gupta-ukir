@@ -116,7 +116,7 @@ body, html {
 /* --- Hero Section --- */
 .hero-banner {
   position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('./background1.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('/background1.png')`;
   background-size: cover;        /* Memastikan gambar merata menutupi seluruh area tanpa gepeng */
   background-position: center;   /* Mengunci fokus gambar di tengah-tengah */
   background-repeat: no-repeat;  /* Mencegah gambar berulang (tiling) */
