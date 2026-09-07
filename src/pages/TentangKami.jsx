@@ -108,7 +108,7 @@ function TentangKami() {
           {/* Kolom Kanan: Gambar Estetik */}
           <div style={{ display: 'flex', justifyContent: 'center' }}>
             <img 
-              src="./relief1.png" 
+              src="./LogoGupta.png" 
               alt="Ukiran Kayu Bali" 
               style={{ 
                 width: '100%', 
