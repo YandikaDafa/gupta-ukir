@@ -5,47 +5,47 @@ function ProdukLoster() {
   const daftarLoster = [
     { 
       id: 1, 
-      judul: 'Loster Ukir Klasik Bali', 
-      desc: 'Ventilasi atau lubang angin berukir estetik untuk sirkulasi udara rumah yang elegan.', 
-      detail: 'Cocok dipasang pada dinding rumah, villa, atau bangunan tradisional untuk menambah nilai estetika.',
+      judul: 'Loster Ukir Kerawang', 
+      desc: 'Hadirkan sirkulasi udara yang optimal sekaligus estetika klasik pada bangunan Anda melalui Loster / Roster Kayu Kerawang Motif Bunga Tradisional Bali.', 
+      detail: 'Dipahat secara teliti oleh tangan-tangan pengrajin lokal Bali (hand-carved) dengan motif ukiran bunga dan ornamen daun simetris yang elegan.',
       kategori: 'Per Unit',
-      harga: 'Rp 150.000',
-      img: './relief2.png' 
+      harga: 'Rp 70.000',
+      img: './loster1.png' 
     },
     { 
       id: 2, 
-      judul: 'Loster Motif Flora Kayu Jati', 
-      desc: 'Lubang angin dengan pahatan motif dedaunan khas Bali yang rapi dan detail.', 
-      detail: 'Dibuat dari bahan kayu jati pilihan yang tahan terhadap cuaca luar ruangan.',
+      judul: 'Loster Sulur Bali', 
+      desc: 'dihiasi dengan pahatan ukiran tiga dimensi bermotif bunga utama dan sulur dedaunan khas Bali yang dirancang secara simetris dan elegan.', 
+      detail: 'Sangat cocok diaplikasikan sebagai ventilasi udara di atas pintu atau jendela, partisi dinding sekat ruangan, maupun pemanis fasad bangunan rumah, vila, dan resor berkonsep tropis.',
       kategori: 'Per Unit',
-      harga: 'Rp 175.000',
-      img: './ukirproduk1.png' 
+      harga: 'Rp 70.000',
+      img: './loster2.png' 
     },
     { 
       id: 3, 
-      judul: 'Loster Geometris Tradisional', 
-      desc: 'Kombinasi ornamen tradisional dan rongga udara optimal untuk kesejukan ruangan.', 
-      detail: 'Pahatan tangan pengrajin profesional asal Tabanan dengan hasil akhir yang halus.',
-      kategori: 'Per Unit / Set',
-      harga: 'Rp 200.000',
-      img: './relief1.png' 
+      judul: 'Loster Bunga Sentral', 
+      desc: 'Maksimalkan kelancaran sirkulasi udara dan pencahayaan alami pada bangunan Anda dengan Loster / Roster Kayu Kerawang Motif Anyaman & Bunga Sentral.', 
+      detail: 'Sangat cocok diaplikasikan sebagai lubang angin atau ventilasi di atas pintu/jendela, sekat pembatas ruangan, maupun sebagai elemen estetika fasad bangunan rumah, vila, dan resor berkonsep tropis maupun semi-minimalis.',
+      kategori: 'Per Unit',
+      harga: 'Rp 80.000',
+      img: './loster3.png' 
     },{ 
       id: 4, 
-      judul: 'Loster Ukir Klasik Bali', 
-      desc: 'Ventilasi atau lubang angin berukir estetik untuk sirkulasi udara rumah yang elegan.', 
-      detail: 'Cocok dipasang pada dinding rumah, villa, atau bangunan tradisional untuk menambah nilai estetika.',
+      judul: 'Kemendung Ukiran Bali', 
+      desc: 'Kemendung adalah elemen ornamen ukiran yang biasanya diletakkan di bagian mahkota atau puncak dari sebuah struktur, seperti di atas pintu masuk utama (angkul-angkul), gapura, ventilasi atas, atau di atas jendela.', 
+      detail: 'Desainnya sangat khas dengan bentuk cembung atau kendi/buah di bagian tengah yang dikelilingi oleh ukiran bunga mekar (seperti bunga matahari/padma) dan dedaunan melingkar (patra) yang simetris dan megah.',
       kategori: 'Per Unit',
-      harga: 'Rp 150.000',
-      img: './relief2.png' 
+      harga: 'Rp 500.000',
+      img: './kemendung.png' 
     },
     { 
       id: 5, 
-      judul: 'Loster Motif Flora Kayu Jati', 
-      desc: 'Lubang angin dengan pahatan motif dedaunan khas Bali yang rapi dan detail.', 
-      detail: 'Dibuat dari bahan kayu jati pilihan yang tahan terhadap cuaca luar ruangan.',
+      judul: 'Bracket Kayu Dekoratif Motif Patra Bali', 
+      desc: 'Menampilkan ukiran tiga dimensi (3D) yang tebal dan bertekstur dinamis dengan motif ornamen tumbuhan khas Bali, produk ini tidak hanya berfungsi sebagai penyangga struktural yang kokoh, tetapi juga sebagai elemen seni yang mempercantik sudut ruangan.', 
+      detail: 'Dibuat secara manual (hand-carved) oleh pengrajin ukir lokal berpengalaman dengan tingkat ketelitian tinggi pada setiap detail lengkungannya.',
       kategori: 'Per Unit',
-      harga: 'Rp 175.000',
-      img: './ukirproduk1.png' 
+      harga: 'Rp 110.000',
+      img: './losterukir1.png' 
     },
     { 
       id: 6, 
@@ -53,8 +53,8 @@ function ProdukLoster() {
       desc: 'Kombinasi ornamen tradisional dan rongga udara optimal untuk kesejukan ruangan.', 
       detail: 'Pahatan tangan pengrajin profesional asal Tabanan dengan hasil akhir yang halus.',
       kategori: 'Per Unit / Set',
-      harga: 'Rp 200.000',
-      img: './relief1.png' 
+      harga: 'Rp 110.000',
+      img: './losterukir2.png' 
     },{ 
       id: 7, 
       judul: 'Ukiran Pojok', 
