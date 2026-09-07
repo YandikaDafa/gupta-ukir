@@ -1,42 +1,279 @@
-import './App.css';
-import { useState } from 'react';
+import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
-function App() {
-  const [openFaq, setOpenFaq] = useState(0);
-
-  const koleksiUnggulan = [
-    { id: 1, judul: 'Ukiran Klasik', desc: 'Sentuhan kemewahan seni pahat untuk keindahan kebutuhan rumah anda.', img: './reliefunggulan1.png' },
-    { id: 2, judul: 'Loster Estetik', desc: 'Sirkulasi udara alami berpadu dengan ornamen estetis khas tradisional Bali.', img: './losterunggulan2.png' },
-    { id: 3, judul: 'Ikut Celedu', desc: 'Detail pahatan tangan yang artistik menghidupkan nuansa khas Bali.', img: './ikutceleduunggulan3.png' },
-    { id: 4, judul: 'Patung Brahma Wisnu 1 Set', desc: 'Sentuhan kemewahan seni pahat dengan tinggi 80cm, cat antik prada.', img: './patungunggulan4.png' },
-    { id: 5, judul: 'Patung Ganesha', desc: 'Patung Ganesha dengan tinggi 70cm.', img: './patungunggulan5.png' },
-    { id: 6, judul: 'Patung Bolo-Bolo', desc: 'Detail pahatan tangan yang artistik menghidupkan nuansa khas Bali dengan tinggi 80cm.', img: './patungunggulan6.png' }
-  ];
-
-  const faqList = [
-    {
-      pertanyaan: 'Apakah bisa mengirim dan memasang ke daerah luar Tabanan?',
-      jawaban: 'Tentu. Kami sering mengirimkan produk kami ke berbagai daerah di Bali. Kami juga menyediakan opsi pengiriman beserta tim instalasi khusus untuk memastikan pemasangan yang sempurna di lokasi Anda.'
+function Produk() {
+  const listProduk = [
+    { 
+      id: 1, 
+      judul: 'Relief Ukir Flora', 
+      desc: 'Ukiran dinding artistik dengan motif flora khas Bali.', 
+      detail: 'Cocok dipasang pada dinding rumah, villa, atau bangunan pura untuk menambah nilai estetika arsitektur tradisional.',
+      kategori: 'Custom / 1pcs',
+      harga: 'Rp 1.300.000',
+      img: './reliefflora.png' 
     },
-    {
-      pertanyaan: 'Berapa lama waktu pembuatan?',
-      jawaban: 'Waktu pembuatan bervariasi tergantung tingkat kerumitan ukiran, biasanya berkisar antara 3 hingga 6 minggu untuk hasil ukiran tangan kayu jati yang berkualitas tinggi.'
+    { 
+      id: 2, 
+      judul: 'Relief Cerita Ramayana', 
+      desc: 'Hadirkan keindahan dan filosofi epos klasik nusantara ke dalam ruangan Anda melalui Panel Relief Kayu "Rama & Sinta di Hutan Suci".', 
+      detail: 'Hiasan dinding interior, koleksi seni budaya, dekorasi ruang bergaya etnik/resort.',
+      kategori: '1pcs',
+      harga: 'Rp 1.500.000',
+      img: './relieframasinta.png' 
     },
-    {
-      pertanyaan: 'Apakah saya bisa memesan desain (custom) sendiri?',
-      jawaban: 'Ya, Anda dapat memesan desain custom sesuai dengan ukuran, preferensi motif ukiran, dan gaya arsitektur hunian yang Anda inginkan.'
+    { 
+      id: 3, 
+      judul: 'Ramayana Wooden Relief', 
+      desc: 'Karya seni pahat tiga dimensi (3D) berukuran vertikal ini menggambarkan adegan dramatis saat Sang Rama bersiap dengan busurnya di tengah hutan lebat yang rindang.',
+      detail: 'Panel vertikal ini sangat ideal dipasang sebagai focal point di dinding ruang tamu, koridor galeri, pilar rumah mewah, maupun hotel dan vila berkonsep etnik nusantara.',
+      kategori: 'Custom / 1pcs',
+      harga: 'Rp 500.000',
+      img: './ramayana.png' 
     },
-    {
-      pertanyaan: 'Bagaimana sistem pembayarannya?',
-      jawaban: 'Sistem pembayaran kami terbagi menjadi 3 tahap: DP 50% untuk memulai produksi, 30% saat barang selesai diproduksi dan siap kirim, serta pelunasan 20% setelah barang diterima dan terpasang sempurna.'
+    { 
+      id: 4, 
+      judul: 'Swastika Gajah Size 25X40cm', 
+      desc: 'Ornamen ukiran khas tradisional Bali untuk pelengkap bangunan dan arsitektur.', 
+      detail: 'Dipahat langsung dengan tangan (handmade) mencerminkan kekayaan seni ukir tradisional asal Tabanan.',
+      kategori: 'Per Pcs / Set',
+      harga: 'Rp 350.000',
+      img: './swastikagajah.png' 
+    },
+    { 
+      id: 5, 
+      judul: 'Menur Polos Size 25x25cm', 
+      desc: 'Pahatan pemucu sudut atau bingkai sudut dengan detail ukiran klasik yang artistik.', 
+      detail: 'Cocok digunakan sebagai penghias sudut bangunan, pintu, atau gebyok khas Bali agar tampak lebih megah.',
+      kategori: 'Per Pcs / Pasang',
+      harga: 'Rp 100.000',
+      img: './menurpolos.png' 
+    },
+    { 
+      id: 6, 
+      judul: 'Menur Kotak Size 25x25cm', 
+      desc: 'Paket kombinasi ornamen menur dan pemucu untuk dekorasi arsitektur rumah dan pura.', 
+      detail: 'Menggunakan bahan kayu pilihan berkualitas tinggi yang tahan lama serta mudah dipasang.',
+      kategori: 'Per Set Lengkap',
+      harga: 'Rp 150.000',
+      img: './menurkotak.png' 
+    },
+    { 
+      id: 7, 
+      judul: 'Menur Fiber Size 25x25cm', 
+      desc: 'Ornamen ukiran khas tradisional Bali untuk pelengkap bangunan dan arsitektur.', 
+      detail: 'Dipahat langsung dengan tangan (handmade) mencerminkan kekayaan seni ukir tradisional asal Tabanan.',
+      kategori: 'Per Pcs / Set',
+      harga: 'Rp 500.000',
+      img: './menurfiber25.png' 
+    },
+    { 
+      id: 8, 
+      judul: 'Menur Fiber Size 40x40cm', 
+      desc: 'Pahatan pemucu sudut atau bingkai sudut dengan detail ukiran klasik yang artistik.', 
+      detail: 'Cocok digunakan sebagai penghias sudut bangunan, pintu, atau gebyok khas Bali agar tampak lebih megah.',
+      kategori: 'Per Pcs / Pasang',
+      harga: 'Rp 1.100.000',
+      img: './menurfiber40.png' 
+    },
+    { 
+      id: 9, 
+      judul: 'Menur Fiber Size 30x30cm', 
+      desc: 'Paket kombinasi ornamen menur dan pemucu untuk dekorasi arsitektur rumah dan pura.', 
+      detail: 'Menggunakan bahan kayu pilihan berkualitas tinggi yang tahan lama serta mudah dipasang.',
+      kategori: 'Per Set Lengkap',
+      harga: 'Rp 700.000',
+      img: './menurfiber30.png' 
+    },
+    { 
+      id: 10, 
+      judul: 'Cup Lampu Ukir Klasik Bali', 
+      desc: ': Dibuat dengan detail ukiran tangan yang rapi dan artistik.Menghadirkan atmosfer Bali yang hangat, elegan, dan eksotis di dalam rumah.', 
+      detail: 'Pola ukiran menciptakan bias cahaya yang indah saat lampu dinyalakan.',
+      kategori: 'Per Unit',
+      harga: 'Rp 100.000',
+      img: './cuplampu.png' 
+    },
+    { 
+      id: 11, 
+      judul: 'Loster Ukir Bunga Klasik Bali', 
+      desc: 'Loster Ukir Bunga Klasik Bali merupakan ornamen ventilasi udara yang menampilkan motif bunga khas Bali dengan detail pahatan tangan yang halus dan artistik.', 
+      detail: 'Pahatan tangan pengrajin profesional dengan hasil akhir yang halus.',
+      kategori: 'Per Unit / 1pcs',
+      harga: 'Rp 60.000',
+      img: './losterbunga.png' 
+    },
+    { 
+      id: 12, 
+      judul: 'Patung Ayam Tinggi 60cm', 
+      desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
+      detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
+      kategori: 'Custom / Per Set',
+      harga: 'Rp 600.000',
+      img: './ayam1.png' 
+    },
+    { 
+      id: 13, 
+      judul: 'Patung Ayam Tinggi 60cm', 
+      desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
+      detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
+      kategori: 'Custom / Per Set',
+      harga: 'Rp 600.000',
+      img: './ayam2.png' 
+    },
+    { 
+      id: 14, 
+      judul: 'Patung Ganesha Cream & Prada', 
+      desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
+      detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
+      kategori: 'Custom / Per Set',
+      harga: 'Rp 2.500.000',
+      img: './ganeshacream.png' 
+    },{ 
+      id: 15, 
+      judul: 'Patung Hanuman Tinggi 80cm', 
+      desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
+      detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
+      kategori: 'Custom / 1 Set',
+      harga: 'Rp 600.000',
+      img: './hanuman.png' 
+    },
+    { 
+      id: 16, 
+      judul: 'Patung Singadari Tinggi 40cm', 
+      desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
+      detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
+      kategori: 'Custom / 1 Set',
+      harga: 'Rp 500.000',
+      img: './singadari.png' 
+    },
+    { 
+      id: 17, 
+      judul: 'Patung Raksasa Polos Tinggi 1meter', 
+      desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
+      detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
+      kategori: 'Custom / 1 Set',
+      harga: 'Rp 1.100.000',
+      img: './raksasapolos.png' 
+    },{ 
+      id: 18, 
+      judul: 'Patung Singa Menegah Cat Batu', 
+      desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
+      detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
+      kategori: 'Custom / 1 Set',
+      harga: 'Rp 500.000',
+      img: './menegah.png' 
+    },
+    { 
+      id: 19, 
+      judul: 'Patung Macan Tinggi 80cm', 
+      desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
+      detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
+      kategori: 'Custom / 1 Set',
+      harga: 'Rp 1.500.000',
+      img: './macan.png' 
+    },{ 
+      id: 20, 
+      judul: 'Patung Ganesha Tinggi 130cm', 
+      desc: 'Karya seni ukir patung yang menghadirkan suasana tenang, damai, dan estetis untuk sudut interior tinggi 90cm.', 
+      detail: 'Dipahat dengan penuh ketenangan, sangat ideal untuk menghiasi Sudut Rumah.',
+      kategori: 'Per Unit',
+      harga: 'Rp 3.000.000',
+      img: './ganeshatinggi.png' 
+    },
+    { 
+      id: 21, 
+      judul: 'Patung Angsa ', 
+      desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
+      detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
+      kategori: 'Custom / 1 Set',
+      harga: 'Rp 700.000',
+      img: './angsa.png' 
+    },
+    { 
+      id: 22, 
+      judul: 'Patung Singa Cat warna Tinggi 40cm', 
+      desc: 'Karya seni ukir patung yang menghadirkan suasana tenang, damai, dan estetis untuk sudut interior.', 
+      detail: 'Dipahat dengan penuh ketenangan, sangat ideal untuk menghiasi Sudut Rumah.',
+      kategori: 'Per Unit',
+      harga: 'Rp 1.200.000',
+      img: './singacat.png' 
+    },
+    { 
+      id: 23, 
+      judul: 'Singa Menengah Polos', 
+      desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
+      detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
+      kategori: 'Custom / 1 Set',
+      harga: 'Rp 300.000',
+      img: './singamenengah.png' 
+    },
+    { 
+      id: 24, 
+      judul: 'Patung Megambel Polos', 
+      desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
+      detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
+      kategori: 'Custom /  1pcs',
+      harga: 'Rp 500.000',
+      img: './megambelpolos.png' 
+    },
+    { 
+      id: 25, 
+      judul: 'Patung Megambel Cat ', 
+      desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
+      detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
+      kategori: 'Custom / 1 Set',
+      harga: 'Rp 700.000',
+      img: './megambelcat.png' 
+    },{ 
+      id: 26, 
+      judul: 'Patung Rangda Tinggi 1meter', 
+      desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
+      detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
+      kategori: 'Custom / 1 Set',
+      harga: 'Rp 3.000.000',
+      img: './rangda.png' 
+    },
+    { 
+      id: 27, 
+      judul: 'Patung Hanuman Tinggi 80cm', 
+      desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
+      detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
+      kategori: 'Custom / 1 Set',
+      harga: 'Rp 1.100.000',
+      img: './hanumancat.png' 
+    },
+    { 
+      id: 28, 
+      judul: 'Patung Hanuman Tinggi 1meter', 
+      desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
+      detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
+      kategori: 'Custom / 1 Set',
+      harga: 'Rp 1.100.000',
+      img: './hanuman1meter.png' 
+    },{ 
+      id: 29, 
+      judul: 'Patung Kakek Tinggi 60cm ', 
+      desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
+      detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
+      kategori: 'Custom / 1pcs',
+      harga: 'Rp 400.000',
+      img: './kakek.png' 
+    },
+    { 
+      id: 30, 
+      judul: 'Patung Nenek 60cm', 
+      desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
+      detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
+      kategori: 'Custom / 1pcs',
+      harga: 'Rp 1.500.000',
+      img: './nenek.png' 
     }
   ];
 
   return (
-    <div className="container">
+    <div className="page-container">
       <nav className="navbar">
-        {/* Logo diperbaiki agar tidak double (hanya menampilkan gambar logo atau teks saja secara bersih) */}
+        {/* Logo bersih tanpa teks double */}
         <Link to="/" className="logo-link">
           <img 
             src="./LogoGupta.png" 
@@ -74,166 +311,52 @@ function App() {
         </ul>
       </nav>
 
-      {/* Hero Section dengan jarak margin-top/padding agar posisi turun ke bawah */}
-      <header className="hero-banner" style={{ position: 'relative', overflow: 'hidden', marginTop: '20px' }}>
+      <div className="content-wrapper" style={{ paddingBottom: '60px' }}>
+        <h1 style={{ textAlign: 'center', marginBottom: '40px', color: '#d4af37', fontFamily: 'serif', fontSize: '2.5rem', fontWeight: 'normal' }}>
+          Produk & Koleksi Ukiran Bali
+        </h1>
         
+        <div className="product-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px', maxWidth: '1200px', margin: '0 auto' }}>
+          {listProduk.map((item) => (
+            <div key={item.id} className="card" style={{ padding: '24px', textAlign: 'left', backgroundColor: '#141414', border: '1px solid #262626', borderRadius: '16px', display: 'flex', flexDirection: 'column', boxShadow: '0 10px 30px rgba(0,0,0,0.5)' }}>
+              
+              {/* Gambar Diperbarui dengan objectFit: 'contain' agar tampil utuh tanpa terpotong */}
+              <img 
+                src={item.img} 
+                alt={item.nama} 
+                className="card-img" 
+                style={{ 
+                  height: '240px', 
+                  width: '100%', 
+                  objectFit: 'contain', 
+                  borderRadius: '10px', 
+                  marginBottom: '15px', 
+                  backgroundColor: '#161616',
+                  padding: '10px'
+                }} 
+              />
 
-        <div className="hero-content" style={{ position: 'relative', zIndex: 2 }}>
-          <h1 className="hero-title" style={{ color: '#d4af37', textShadow: '0 2px 4px rgba(0,0,0,0.8)' }}>
-            Gupta Bali Ukir D'Bali
-          </h1>
-          <p className="hero-desc" style={{ color: '#f0f0f0', textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
-            Pengrajin kusen, pintu, dan jendela premium dengan sentuhan seni ukir otentik Bali untuk hunian mewah Anda.
-          </p>
-          <div className="hero-actions">
-            <a href="#produk" className="btn-outline">Lihat Koleksi</a>
-            <button 
-              onClick={() => window.open('https://wa.me/628135988482?text=Halo%20Gupta%20Bali%20Ukir,%20saya%20ingin%20meminta%20penawaran')} 
-              className="btn-dark"
-            >
-              Minta Penawaran
-            </button>
-          </div>
-        </div>
-      </header>
-
-      {/* Koleksi Unggulan */}
-      <section className="koleksi-section" id="katalog">
-        <h2 className="section-heading">Koleksi Unggulan</h2>
-        <p className="section-sub">Hadirkan nuansa resort Bali ke dalam rumah Anda dengan karya seni kami.</p>
-
-        <div className="koleksi-grid">
-          {koleksiUnggulan.map((item) => (
-            <div key={item.id} className="koleksi-card">
-              <img src={item.img} alt={item.judul} className="koleksi-img" />
-              <div className="koleksi-body">
-                <h3 className="koleksi-title">{item.judul}</h3>
-                <p className="koleksi-desc">{item.desc}</p>
+              <h3 style={{ color: '#d4af37', fontFamily: 'serif', fontSize: '1.25rem', marginBottom: '10px', fontWeight: 'normal' }}>{item.nama}</h3>
+              <p style={{ fontSize: '0.95rem', color: '#b0b0b0', margin: '0 0 15px 0', lineHeight: '1.5' }}>{item.desc}</p>
+              
+              <div style={{ fontSize: '0.88rem', color: '#d0d0d0', background: '#1c1c1c', padding: '14px', borderRadius: '10px', marginBottom: '20px', border: '1px solid #2a2a2a' }}>
+                <p style={{ marginBottom: '6px', lineHeight: '1.4' }}><strong style={{ color: '#ffffff' }}>Detail:</strong> {item.detail}</p>
+                <p style={{ margin: '0', lineHeight: '1.4' }}><strong style={{ color: '#ffffff' }}>Kategori/Ukuran:</strong> {item.netto}</p>
               </div>
+
+              <p className="price" style={{ fontSize: '1.35rem', fontWeight: '600', color: '#ffffff', marginBottom: '20px' }}>{item.harga}</p>
+              
+              <button 
+                className="wa-btn" 
+                onClick={() => window.open(`https://wa.me/628135988482?text=Halo%20Gupta%20Bali%20Ukir,%20saya%20mau%20pesan%20${encodeURIComponent(item.nama)}`)}
+                style={{ backgroundColor: '#25D366', color: '#ffffff', border: 'none', borderRadius: '8px', padding: '12px 20px', fontWeight: '600', cursor: 'pointer', width: '100%', marginTop: 'auto', transition: 'opacity 0.2s' }}
+              >
+                Pesan Via Whatsapp
+              </button>
             </div>
           ))}
         </div>
-      </section>
-
-      {/* Keunggulan */}
-      <section className="keunggulan-section">
-        <h2 className="keunggulan-main-title">Keunggulan Karya Ukir Kami</h2>
-        <p className="keunggulan-desc">
-          Dikerjakan secara teliti oleh perajin berpengalaman di Br. Dinas Jakatebel, Tangguntiti, Tabanan. Berikut keunggulan produk kami:
-        </p>
-
-        <div className="why-grid">
-          <div className="why-item">
-            <h3 className="why-title">Kayu Pilihan</h3>
-            <p className="why-text">Menggunakan material kayu berkualitas tinggi yang awet dan tahan lama.</p>
-          </div>
-          <div className="why-item">
-            <h3 className="why-title">Detail Artistik</h3>
-            <p className="why-text">Pahatan tangan asli (handmade) dengan seni ukir khas tradisional Bali.</p>
-          </div>
-          <div className="why-item">
-            <h3 className="why-title">Terpercaya Sejak 2009</h3>
-            <p className="why-text">Berpengalaman melayani berbagai kebutuhan ukiran rumah, loster, hingga menur.</p>
-          </div>
-        </div>
-      </section>
-
-      {/* Bagian FAQ */}
-      <section className="faq-section">
-        <div className="faq-container">
-          <p className="faq-subtitle">Ada Pertanyaan?</p>
-          <h2 className="faq-title">Yang Sering Ditanyakan</h2>
-
-          <div className="faq-list">
-            {faqList.map((faq, index) => {
-              const isOpen = openFaq === index;
-              return (
-                <div key={index} className="faq-card">
-                  <div 
-                    onClick={() => setOpenFaq(isOpen ? null : index)}
-                    className="faq-question-row"
-                  >
-                    <h3 className="faq-q-text">{faq.pertanyaan}</h3>
-                    <div className="faq-icon-box">
-                      {isOpen ? '×' : '+'}
-                    </div>
-                  </div>
-
-                  {isOpen && (
-                    <div className="faq-answer">
-                      {faq.jawaban}
-                    </div>
-                  )}
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* Bagian Testimoni */}
-      <section className="testimoni-section" id="testimoni">
-        <div className="testimoni-container">
-          <p className="testimoni-subtitle">Yang Mereka Katakan</p>
-          <h2 className="testimoni-heading-main">Kepercayaan yang Teruji</h2>
-
-          <div className="testimoni-grid">
-            <div className="testimoni-card-new">
-              <div className="testimoni-header-row">
-                <div className="testimoni-stars">★★★★★</div>
-                <div className="testimoni-quote-icon">“</div>
-              </div>
-              <p className="testimoni-text">
-                “Gebyok yang dipesan hasilnya sangat luar biasa. Ukirannya dalam dan halus. Sangat merepresentasikan kemewahan Bali yang sesungguhnya.”
-              </p>
-              <div className="testimoni-divider"></div>
-              <div className="testimoni-author-row">
-                <div className="testimoni-avatar">H</div>
-                <div>
-                  <h4 className="testimoni-name">Bpk. Hendra W.</h4>
-                  <p className="testimoni-role">Pemilik Villa, Canggu</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="testimoni-card-new">
-              <div className="testimoni-header-row">
-                <div className="testimoni-stars">★★★★★</div>
-                <div className="testimoni-quote-icon">“</div>
-              </div>
-              <p className="testimoni-text">
-                “Selalu puas bekerja sama dengan Gupta Bali Ukir. Presisi ukurannya tepat dan pengiriman ke Jakarta selalu tiba dalam kondisi sempurna tanpa cacat.”
-              </p>
-              <div className="testimoni-divider"></div>
-              <div className="testimoni-author-row">
-                <div className="testimoni-avatar">S</div>
-                <div>
-                  <h4 className="testimoni-name">Ibu Sarah M.</h4>
-                  <p className="testimoni-role">Principal Architect, Gianyar</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="testimoni-card-new">
-              <div className="testimoni-header-row">
-                <div className="testimoni-stars">★★★★★</div>
-                <div className="testimoni-quote-icon">“</div>
-              </div>
-              <p className="testimoni-text">
-                “The wooden doors transformed our resort entirely. True Balinese craftsmanship — the teak quality is undeniably premium. Will always return.”
-              </p>
-              <div className="testimoni-divider"></div>
-              <div className="testimoni-author-row">
-                <div className="testimoni-avatar">D</div>
-                <div>
-                  <h4 className="testimoni-name">Mr. David K.</h4>
-                  <p className="testimoni-role">Resort Director, Ubud</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      </div>
 
       {/* Footer Interaktif */}
       <footer className="footer-section" style={{ width: '100%', backgroundColor: '#141414', borderTop: '1px solid #262626', padding: '60px 20px 20px' }}>
@@ -338,4 +461,4 @@ function App() {
   );
 }
 
-export default App;
+export default Produk;
