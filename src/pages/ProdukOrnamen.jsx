@@ -5,30 +5,129 @@ function ProdukOrnamen() {
   const daftarOrnamen = [
     { 
       id: 1, 
-      judul: 'Ornamen Menur Bali', 
+      judul: 'Menur Gajah Size 25x25cm ', 
+      desc: 'Ornamen ukiran khas tradisional Bali untuk pelengkap bangunan dan arsitektur.', 
+      detail: 'Dipahat langsung dengan tangan (handmade) mencerminkan kekayaan seni ukir tradisional asal Tabanan.',
+      kategori: 'Per Pcs / Set',
+      harga: 'Rp 250.000',
+      img: './menurgajah25.png' 
+    },
+    { 
+      id: 2, 
+      judul: 'Menur Gajah Size 20x20cm', 
+      desc: 'Pahatan pemucu sudut atau bingkai sudut dengan detail ukiran klasik yang artistik.', 
+      detail: 'Cocok digunakan sebagai penghias sudut bangunan, pintu, atau gebyok khas Bali agar tampak lebih megah.',
+      kategori: 'Per Pcs / Pasang',
+      harga: 'Rp 200.000',
+      img: './menurgajah20.png' 
+    },
+    { 
+      id: 3, 
+      judul: 'Menur Gajah Size 30x30cm', 
+      desc: 'Paket kombinasi ornamen menur dan pemucu untuk dekorasi arsitektur rumah dan pura.', 
+      detail: 'Menggunakan bahan kayu pilihan berkualitas tinggi yang tahan lama serta mudah dipasang.',
+      kategori: 'Per Set Lengkap',
+      harga: 'Rp 350.000',
+      img: './menurgajah30.png' 
+    },
+    { 
+      id: 4, 
+      judul: 'Swastika Gajah Size 25X40cm', 
       desc: 'Ornamen ukiran khas tradisional Bali untuk pelengkap bangunan dan arsitektur.', 
       detail: 'Dipahat langsung dengan tangan (handmade) mencerminkan kekayaan seni ukir tradisional asal Tabanan.',
       kategori: 'Per Pcs / Set',
       harga: 'Rp 350.000',
-      img: './ukirproduk1.png' 
+      img: './swastikagajah.png' 
     },
     { 
-      id: 2, 
-      judul: 'Ornamen Pemucu Kayu Jati', 
+      id: 5, 
+      judul: 'Menur Polos Size 25x25cm', 
+      desc: 'Pahatan pemucu sudut atau bingkai sudut dengan detail ukiran klasik yang artistik.', 
+      detail: 'Cocok digunakan sebagai penghias sudut bangunan, pintu, atau gebyok khas Bali agar tampak lebih megah.',
+      kategori: 'Per Pcs / Pasang',
+      harga: 'Rp 100.000',
+      img: './menurpolos.png' 
+    },
+    { 
+      id: 6, 
+      judul: 'Menur Kotak Size 25x25cm', 
+      desc: 'Paket kombinasi ornamen menur dan pemucu untuk dekorasi arsitektur rumah dan pura.', 
+      detail: 'Menggunakan bahan kayu pilihan berkualitas tinggi yang tahan lama serta mudah dipasang.',
+      kategori: 'Per Set Lengkap',
+      harga: 'Rp 150.000',
+      img: './menurkotak.png' 
+    },
+    { 
+      id: 7, 
+      judul: 'Menur Fiber Size 25x25cm', 
+      desc: 'Ornamen ukiran khas tradisional Bali untuk pelengkap bangunan dan arsitektur.', 
+      detail: 'Dipahat langsung dengan tangan (handmade) mencerminkan kekayaan seni ukir tradisional asal Tabanan.',
+      kategori: 'Per Pcs / Set',
+      harga: 'Rp 500.000',
+      img: './menurfiber25.png' 
+    },
+    { 
+      id: 8, 
+      judul: 'Menur Fiber Size 40x40cm', 
+      desc: 'Pahatan pemucu sudut atau bingkai sudut dengan detail ukiran klasik yang artistik.', 
+      detail: 'Cocok digunakan sebagai penghias sudut bangunan, pintu, atau gebyok khas Bali agar tampak lebih megah.',
+      kategori: 'Per Pcs / Pasang',
+      harga: 'Rp 1.100.000',
+      img: './menurfiber40.png' 
+    },
+    { 
+      id: 9, 
+      judul: 'Menur Fiber Size 30x30cm', 
+      desc: 'Paket kombinasi ornamen menur dan pemucu untuk dekorasi arsitektur rumah dan pura.', 
+      detail: 'Menggunakan bahan kayu pilihan berkualitas tinggi yang tahan lama serta mudah dipasang.',
+      kategori: 'Per Set Lengkap',
+      harga: 'Rp 700.000',
+      img: './menurfiber30.png' 
+    },
+    { 
+      id: 10, 
+      judul: 'Menur Beton Size 20x20cm', 
+      desc: 'Ornamen ukiran khas tradisional Bali untuk pelengkap bangunan dan arsitektur.', 
+      detail: 'Dipahat langsung dengan tangan (handmade) mencerminkan kekayaan seni ukir tradisional asal Tabanan.',
+      kategori: 'Per Pcs / Set',
+      harga: 'Rp 350.000',
+      img: './menurbeton20.png' 
+    },
+    { 
+      id: 11, 
+      judul: 'Menur Beton Size 22x22cm', 
       desc: 'Pahatan pemucu sudut atau bingkai sudut dengan detail ukiran klasik yang artistik.', 
       detail: 'Cocok digunakan sebagai penghias sudut bangunan, pintu, atau gebyok khas Bali agar tampak lebih megah.',
       kategori: 'Per Pcs / Pasang',
       harga: 'Rp 275.000',
-      img: './relief1.png' 
+      img: './menurbeton22.png' 
     },
     { 
-      id: 3, 
-      judul: 'Set Menur & Pemucu Klasik', 
+      id: 12, 
+      judul: 'Menur Beton Size 25x25cm', 
       desc: 'Paket kombinasi ornamen menur dan pemucu untuk dekorasi arsitektur rumah dan pura.', 
       detail: 'Menggunakan bahan kayu pilihan berkualitas tinggi yang tahan lama serta mudah dipasang.',
       kategori: 'Per Set Lengkap',
       harga: 'Rp 600.000',
-      img: './relief2.png' 
+      img: './menurbeton25.png' 
+    },
+    { 
+      id: 13, 
+      judul: 'Menur Beton Size 30x30cm', 
+      desc: 'Paket kombinasi ornamen menur dan pemucu untuk dekorasi arsitektur rumah dan pura.', 
+      detail: 'Menggunakan bahan kayu pilihan berkualitas tinggi yang tahan lama serta mudah dipasang.',
+      kategori: 'Per Set Lengkap',
+      harga: 'Rp 600.000',
+      img: './menurbeton30.png' 
+    },
+    { 
+      id: 14, 
+      judul: 'Pemucu Beton Size 70x30cm', 
+      desc: 'Paket kombinasi ornamen menur dan pemucu untuk dekorasi arsitektur rumah dan pura.', 
+      detail: 'Menggunakan bahan kayu pilihan berkualitas tinggi yang tahan lama serta mudah dipasang.',
+      kategori: 'Per Set Lengkap',
+      harga: 'Rp 100.000',
+      img: './pemucubeton70.png' 
     }
   ];
 
