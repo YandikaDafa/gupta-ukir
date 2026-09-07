@@ -5,57 +5,268 @@ function Produk() {
   const listProduk = [
     { 
       id: 1, 
-      nama: 'Relief Kayu Klasik', 
-      harga: 'Rp 2.500.000', 
-      desc: 'Ukiran dinding artistik dengan berbagai motif klasik dan kontemporer khas Bali.',
-      detail: 'Dikerjakan secara detail oleh perajin berpengalaman menggunakan kayu pilihan terbaik yang awet dan tahan lama.',
-      netto: 'Custom / Sesuai Ukuran',
-      img: './relief3.png' 
+      judul: 'Relief Ukir Flora', 
+      desc: 'Ukiran dinding artistik dengan motif flora khas Bali.', 
+      detail: 'Cocok dipasang pada dinding rumah, villa, atau bangunan pura untuk menambah nilai estetika arsitektur tradisional.',
+      kategori: 'Custom / 1pcs',
+      harga: 'Rp 1.300.000',
+      img: './reliefflora.png' 
     },
     { 
       id: 2, 
-      nama: 'Loster Ukir Estetik', 
-      harga: 'Rp 150.000', 
-      desc: 'Ventilasi atau lubang angin berukir estetik untuk sirkulasi udara rumah yang elegan.',
-      detail: 'Cocok dipasang pada dinding rumah, villa, atau bangunan pura untuk menambah nilai estetika arsitektur tradisional.',
-      netto: 'Per Unit',
-      img: './loster1.png' 
+      judul: 'Relief Cerita Ramayana', 
+      desc: 'Hadirkan keindahan dan filosofi epos klasik nusantara ke dalam ruangan Anda melalui Panel Relief Kayu "Rama & Sinta di Hutan Suci".', 
+      detail: 'Hiasan dinding interior, koleksi seni budaya, dekorasi ruang bergaya etnik/resort.',
+      kategori: '1pcs',
+      harga: 'Rp 1.500.000',
+      img: './relieframasinta.png' 
     },
     { 
       id: 3, 
-      nama: 'Ornamen Menur Bali', 
-      harga: 'Rp 350.000', 
-      desc: 'Ornamen ukiran khas tradisional Bali untuk pelengkap bangunan dan arsitektur.',
-      detail: 'Dipahat langsung dengan tangan (handmade) mencerminkan kekayaan seni ukir tradisional asal Tabanan.',
-      netto: 'Per Pcs / Set',
-      img: './ornamen1.png' 
+      judul: 'Ramayana Wooden Relief', 
+      desc: 'Karya seni pahat tiga dimensi (3D) berukuran vertikal ini menggambarkan adegan dramatis saat Sang Rama bersiap dengan busurnya di tengah hutan lebat yang rindang.',
+      detail: 'Panel vertikal ini sangat ideal dipasang sebagai focal point di dinding ruang tamu, koridor galeri, pilar rumah mewah, maupun hotel dan vila berkonsep etnik nusantara.',
+      kategori: 'Custom / 1pcs',
+      harga: 'Rp 500.000',
+      img: './ramayana.png' 
     },
-    {
+    { 
       id: 4, 
-      nama: 'Ornamen Pemucuh Bali', 
-      harga: 'Rp 350.000', 
-      desc: 'Ornamen ukiran khas tradisional Bali untuk pelengkap bangunan dan arsitektur.',
+      judul: 'Swastika Gajah Size 25X40cm', 
+      desc: 'Ornamen ukiran khas tradisional Bali untuk pelengkap bangunan dan arsitektur.', 
       detail: 'Dipahat langsung dengan tangan (handmade) mencerminkan kekayaan seni ukir tradisional asal Tabanan.',
-      netto: 'Per Pcs / Set',
-      img: './ukirproduk1.png' 
+      kategori: 'Per Pcs / Set',
+      harga: 'Rp 350.000',
+      img: './swastikagajah.png' 
     },
-    {
+    { 
       id: 5, 
-      nama: 'Pintu Gebyok Tradisional', 
-      harga: 'Rp 7.500.000', 
-      desc: 'Gerbang atau pintu utama mewah berukir penuh khas Bali dengan material kayu jati tua.',
-      detail: 'Karya agung seni ukir tingkat tinggi yang memberikan kesan megah dan berwibawa pada fasad rumah atau villa.',
-      netto: 'Custom / Sesuai Ukuran',
-      img: './relief2.png' 
+      judul: 'Menur Polos Size 25x25cm', 
+      desc: 'Pahatan pemucu sudut atau bingkai sudut dengan detail ukiran klasik yang artistik.', 
+      detail: 'Cocok digunakan sebagai penghias sudut bangunan, pintu, atau gebyok khas Bali agar tampak lebih megah.',
+      kategori: 'Per Pcs / Pasang',
+      harga: 'Rp 100.000',
+      img: './menurpolos.png' 
     },
-    {
+    { 
       id: 6, 
-      nama: 'Jendela Ukiran Bali', 
-      harga: 'Rp 1.800.000', 
-      desc: 'Jendela kayu berukir estetis yang memadukan sirkulasi udara optimal dan keindahan seni.',
-      detail: 'Dibuat dari kayu jati pilihan dengan detail ukiran tembus pandang atau panel tertutup yang kokoh.',
-      netto: 'Per Unit / Set',
-      img: './ukirproduk1.png' 
+      judul: 'Menur Kotak Size 25x25cm', 
+      desc: 'Paket kombinasi ornamen menur dan pemucu untuk dekorasi arsitektur rumah dan pura.', 
+      detail: 'Menggunakan bahan kayu pilihan berkualitas tinggi yang tahan lama serta mudah dipasang.',
+      kategori: 'Per Set Lengkap',
+      harga: 'Rp 150.000',
+      img: './menurkotak.png' 
+    },
+    { 
+      id: 7, 
+      judul: 'Menur Fiber Size 25x25cm', 
+      desc: 'Ornamen ukiran khas tradisional Bali untuk pelengkap bangunan dan arsitektur.', 
+      detail: 'Dipahat langsung dengan tangan (handmade) mencerminkan kekayaan seni ukir tradisional asal Tabanan.',
+      kategori: 'Per Pcs / Set',
+      harga: 'Rp 500.000',
+      img: './menurfiber25.png' 
+    },
+    { 
+      id: 8, 
+      judul: 'Menur Fiber Size 40x40cm', 
+      desc: 'Pahatan pemucu sudut atau bingkai sudut dengan detail ukiran klasik yang artistik.', 
+      detail: 'Cocok digunakan sebagai penghias sudut bangunan, pintu, atau gebyok khas Bali agar tampak lebih megah.',
+      kategori: 'Per Pcs / Pasang',
+      harga: 'Rp 1.100.000',
+      img: './menurfiber40.png' 
+    },
+    { 
+      id: 9, 
+      judul: 'Menur Fiber Size 30x30cm', 
+      desc: 'Paket kombinasi ornamen menur dan pemucu untuk dekorasi arsitektur rumah dan pura.', 
+      detail: 'Menggunakan bahan kayu pilihan berkualitas tinggi yang tahan lama serta mudah dipasang.',
+      kategori: 'Per Set Lengkap',
+      harga: 'Rp 700.000',
+      img: './menurfiber30.png' 
+    },
+    { 
+      id: 10, 
+      judul: 'Cup Lampu Ukir Klasik Bali', 
+      desc: ': Dibuat dengan detail ukiran tangan yang rapi dan artistik.Menghadirkan atmosfer Bali yang hangat, elegan, dan eksotis di dalam rumah.', 
+      detail: 'Pola ukiran menciptakan bias cahaya yang indah saat lampu dinyalakan.',
+      kategori: 'Per Unit',
+      harga: 'Rp 100.000',
+      img: './cuplampu.png' 
+    },
+    { 
+      id: 11, 
+      judul: 'Loster Ukir Bunga Klasik Bali', 
+      desc: 'Loster Ukir Bunga Klasik Bali merupakan ornamen ventilasi udara yang menampilkan motif bunga khas Bali dengan detail pahatan tangan yang halus dan artistik.', 
+      detail: 'Pahatan tangan pengrajin profesional dengan hasil akhir yang halus.',
+      kategori: 'Per Unit / 1pcs',
+      harga: 'Rp 60.000',
+      img: './losterbunga.png' 
+    },
+    { 
+      id: 12, 
+      judul: 'Patung Ayam Tinggi 60cm', 
+      desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
+      detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
+      kategori: 'Custom / Per Set',
+      harga: 'Rp 600.000',
+      img: './ayam1.png' 
+    },
+    { 
+      id: 13, 
+      judul: 'Patung Ayam Tinggi 60cm', 
+      desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
+      detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
+      kategori: 'Custom / Per Set',
+      harga: 'Rp 600.000',
+      img: './ayam2.png' 
+    },
+    { 
+      id: 14, 
+      judul: 'Patung Ganesha Cream & Prada', 
+      desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
+      detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
+      kategori: 'Custom / Per Set',
+      harga: 'Rp 2.500.000',
+      img: './ganeshacream.png' 
+    },{ 
+      id: 15, 
+      judul: 'Patung Hanuman Tinggi 80cm', 
+      desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
+      detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
+      kategori: 'Custom / 1 Set',
+      harga: 'Rp 600.000',
+      img: './hanuman.png' 
+    },
+    { 
+      id: 16, 
+      judul: 'Patung Singadari Tinggi 40cm', 
+      desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
+      detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
+      kategori: 'Custom / 1 Set',
+      harga: 'Rp 500.000',
+      img: './singadari.png' 
+    },
+    { 
+      id: 17, 
+      judul: 'Patung Raksasa Polos Tinggi 1meter', 
+      desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
+      detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
+      kategori: 'Custom / 1 Set',
+      harga: 'Rp 1.100.000',
+      img: './raksasapolos.png' 
+    },{ 
+      id: 18, 
+      judul: 'Patung Singa Menegah Cat Batu', 
+      desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
+      detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
+      kategori: 'Custom / 1 Set',
+      harga: 'Rp 500.000',
+      img: './menegah.png' 
+    },
+    { 
+      id: 19, 
+      judul: 'Patung Macan Tinggi 80cm', 
+      desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
+      detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
+      kategori: 'Custom / 1 Set',
+      harga: 'Rp 1.500.000',
+      img: './macan.png' 
+    },{ 
+      id: 20, 
+      judul: 'Patung Ganesha Tinggi 130cm', 
+      desc: 'Karya seni ukir patung yang menghadirkan suasana tenang, damai, dan estetis untuk sudut interior tinggi 90cm.', 
+      detail: 'Dipahat dengan penuh ketenangan, sangat ideal untuk menghiasi Sudut Rumah.',
+      kategori: 'Per Unit',
+      harga: 'Rp 3.000.000',
+      img: './ganeshatinggi.png' 
+    },
+    { 
+      id: 21, 
+      judul: 'Patung Angsa ', 
+      desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
+      detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
+      kategori: 'Custom / 1 Set',
+      harga: 'Rp 700.000',
+      img: './angsa.png' 
+    },
+    { 
+      id: 22, 
+      judul: 'Patung Singa Cat warna Tinggi 40cm', 
+      desc: 'Karya seni ukir patung yang menghadirkan suasana tenang, damai, dan estetis untuk sudut interior.', 
+      detail: 'Dipahat dengan penuh ketenangan, sangat ideal untuk menghiasi Sudut Rumah.',
+      kategori: 'Per Unit',
+      harga: 'Rp 1.200.000',
+      img: './singacat.png' 
+    },
+    { 
+      id: 23, 
+      judul: 'Singa Menengah Polos', 
+      desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
+      detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
+      kategori: 'Custom / 1 Set',
+      harga: 'Rp 300.000',
+      img: './singamenengah.png' 
+    },
+    { 
+      id: 24, 
+      judul: 'Patung Megambel Polos', 
+      desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
+      detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
+      kategori: 'Custom /  1pcs',
+      harga: 'Rp 500.000',
+      img: './megambelpolos.png' 
+    },
+    { 
+      id: 25, 
+      judul: 'Patung Megambel Cat ', 
+      desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
+      detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
+      kategori: 'Custom / 1 Set',
+      harga: 'Rp 700.000',
+      img: './megambelcat.png' 
+    },{ 
+      id: 26, 
+      judul: 'Patung Rangda Tinggi 1meter', 
+      desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
+      detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
+      kategori: 'Custom / 1 Set',
+      harga: 'Rp 3.000.000',
+      img: './rangda.png' 
+    },
+    { 
+      id: 27, 
+      judul: 'Patung Hanuman Tinggi 80cm', 
+      desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
+      detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
+      kategori: 'Custom / 1 Set',
+      harga: 'Rp 1.100.000',
+      img: './hanumancat.png' 
+    },
+    { 
+      id: 28, 
+      judul: 'Patung Hanuman Tinggi 1meter', 
+      desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
+      detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
+      kategori: 'Custom / 1 Set',
+      harga: 'Rp 1.100.000',
+      img: './hanuman1meter.png' 
+    },{ 
+      id: 29, 
+      judul: 'Patung Kakek Tinggi 60cm ', 
+      desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
+      detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
+      kategori: 'Custom / 1pcs',
+      harga: 'Rp 400.000',
+      img: './kakek.png' 
+    },
+    { 
+      id: 30, 
+      judul: 'Patung Nenek 60cm', 
+      desc: 'Kombinasi seni patung timbul dengan cerita epik pewayangan tradisional Bali.', 
+      detail: 'Karya ukiran tiga dimensi dengan detail cerita klasik Bali yang sarat akan nilai seni tinggi.',
+      kategori: 'Custom / 1pcs',
+      harga: 'Rp 1.500.000',
+      img: './nenek.png' 
     }
   ];
 
