@@ -83,7 +83,7 @@ function App() {
             Gupta Bali Ukir D'Bali
           </h1>
           <p className="hero-desc" style={{ color: '#f0f0f0', textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>
-            Pengrajin kusen, pintu, dan jendela premium dengan sentuhan seni ukir otentik Bali untuk hunian mewah Anda.
+            Pengrajin ukiran relief, menur, loster dan ornamen premium dengan sentuhan seni ukir otentik Bali untuk hunian mewah Anda.
           </p>
           <div className="hero-actions">
             <a href="#produk" className="btn-outline">Lihat Koleksi</a>
