@@ -15,7 +15,7 @@ function ProdukLoster() {
     { 
       id: 2, 
       judul: 'Loster Sulur Bali', 
-      desc: 'dihiasi dengan pahatan ukiran tiga dimensi bermotif bunga utama dan sulur dedaunan khas Bali yang dirancang secara simetris dan elegan.', 
+      desc: 'Dihiasi dengan pahatan ukiran tiga dimensi bermotif bunga utama dan sulur dedaunan khas Bali yang dirancang secara simetris dan elegan.', 
       detail: 'Sangat cocok diaplikasikan sebagai ventilasi udara di atas pintu atau jendela, partisi dinding sekat ruangan, maupun pemanis fasad bangunan rumah, vila, dan resor berkonsep tropis.',
       kategori: 'Per Unit',
       harga: 'Rp 70.000',
@@ -49,27 +49,28 @@ function ProdukLoster() {
     },
     { 
       id: 6, 
-      judul: 'Loster Geometris Tradisional', 
+      judul: 'Ukiran Geometris Tradisional', 
       desc: 'Kombinasi ornamen tradisional dan rongga udara optimal untuk kesejukan ruangan.', 
       detail: 'Pahatan tangan pengrajin profesional asal Tabanan dengan hasil akhir yang halus.',
       kategori: 'Per Unit / Set',
       harga: 'Rp 110.000',
       img: './losterukir2.png' 
-    },{ 
+    },
+    { 
       id: 7, 
       judul: 'Ukiran Pojok', 
       desc: 'Ventilasi atau lubang angin berukir estetik untuk sirkulasi udara rumah yang elegan.', 
       detail: 'Cocok dipasang pada dinding rumah, villa, atau bangunan tradisional untuk menambah nilai estetika.',
-      kategori: 'Per Unit',
+      kategori: 'Per Unit / 1pcs',
       harga: 'Rp 110.000',
       img: './pojok.png' 
     },
     { 
       id: 8, 
       judul: 'Cup Lampu Ukir Klasik Bali', 
-      desc: ': Dibuat dengan detail ukiran tangan yang rapi dan artistik.Menghadirkan atmosfer Bali yang hangat, elegan, dan eksotis di dalam rumah.', 
+      desc: 'Dibuat dengan detail ukiran tangan yang rapi dan artistik.Menghadirkan atmosfer Bali yang hangat, elegan, dan eksotis di dalam rumah.', 
       detail: 'Pola ukiran menciptakan bias cahaya yang indah saat lampu dinyalakan.',
-      kategori: 'Per Unit',
+      kategori: 'Per Unit / 1pcs',
       harga: 'Rp 100.000',
       img: './cuplampu.png' 
     },
@@ -81,6 +82,33 @@ function ProdukLoster() {
       kategori: 'Per Unit / 1pcs',
       harga: 'Rp 60.000',
       img: './losterbunga.png' 
+    },
+    { 
+      id: 10, 
+      judul: 'Loster Daun Pakis Bali', 
+      desc: 'Kombinasi ornamen tradisional dan rongga udara optimal untuk kesejukan ruangan.', 
+      detail: 'Dibuat secara manual (hand-carved) oleh pengrajin ukir lokal Bali berpengalaman dengan tingkat ketelitian tinggi pada setiap rongganya.',
+      kategori: 'Per Unit / 1pcs',
+      harga: 'Rp 70.000',
+      img: './losterpakis.png' 
+    },
+    { 
+      id: 11, 
+      judul: 'Loster Bunga Kamboja', 
+      desc: 'Hadirkan nuansa tropis yang asri pada bangunan Anda dengan Loster Motif Bunga Kamboja Tradisional Bali yang menampilkan pahatan tangan halus dan detail artistik.', 
+      detail: 'Selain berfungsi sebagai jalur sirkulasi udara dan cahaya alami yang sangat baik, produk ini juga mempercantik fasad bangunan, dinding pembatas, atau ventilasi atas pintu dan jendela pada rumah, vila, maupun resor berkonsep etnik tropis.',
+      kategori: 'Per Unit / 1pcs',
+      harga: 'Rp 60.000',
+      img: './losterbungakamboja.png' 
+    },
+    { 
+      id: 12, 
+      judul: 'Loster Bunga Teratai', 
+      desc: 'Panel ventilasi tembus pandang (kerawang) ini menampilkan ukiran tiga dimensi yang sangat menawan, memadukan figur burung yang bertengger di antara kelopak bunga teratai, daun teratai yang lebar, serta dedaunan khas Bali.', 
+      detail: 'Pahatan tangan pengrajin profesional dengan hasil akhir yang halus.',
+      kategori: 'Per Unit / 1pcs',
+      harga: 'Rp 70.000',
+      img: './losterbungateratai.png' 
     }
   ];
 
