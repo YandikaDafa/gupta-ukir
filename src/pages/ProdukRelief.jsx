@@ -32,7 +32,7 @@ function ProdukRelief() {
     },
     { 
       id: 4, 
-      judul: 'Panel Ukiran Patra Punggel', 
+      judul: 'Panel Ukiran Patra Punggel Size 10x90cm', 
       desc: 'Motif patra punggel dikenal dengan garis lengkung spiralnya yang mengalir dinamis, melambangkan keharmonisan dan dinamika alam.', 
       detail: 'Dibuat dengan teknik ukir tangan (hand-carved) penuh ketelitian oleh pengrajin lokal Bali, panel ini memiliki kedalaman relief 3D yang sangat elegan dengan latar bertekstur khas.',
       kategori: 'Per Pcs',
@@ -53,8 +53,62 @@ function ProdukRelief() {
       judul: 'Balinese Carved Pillar Panel', 
       desc: 'Terbuat dari kayu pilihan berkualitas tinggi, set panel ini menampilkan keindahan ukiran tangan tradisional khas Bali dengan pola daun melingkar yang mengalir dinamis dan simetris.', 
       detail: 'Dikerjakan sepenuhnya oleh pengrajin lokal berpengalaman, setiap detail ukiran 3D dipahat dengan presisi tinggi untuk menghadirkan kesan mewah, elegan, dan etnik. Sangat ideal diaplikasikan sebagai pelapis pilar/tiang bangunan, dekorasi sudut ruangan, pilar lobi hotel, restoran, maupun hunian bergaya tropis modern.',
-      kategori: 'Per Pcs',
+      kategori: '1 Pcs',
       harga: 'Rp 65.000',
+      img: './balinesecarved.png' 
+    },
+    { 
+      id: 7, 
+      judul: 'Panel Ornamen Kayu Motif Patra Punggel Vertikal Size 50x100cm', 
+      desc: 'Perkaya detail arsitektur klasik Bali pada bangunan Anda dengan Panel Ornamen Kayu Motif Patra Punggel Vertikal.', 
+      detail: 'Sangat ideal diaplikasikan sebagai pelapis pilar/tiang vertikal, dekorasi sudut dinding, hiasan pintu, maupun elemen estetika untuk rumah, vila, dan resor berkonsep etnik tropis.',
+      kategori: 'Custom / 1pcs',
+      harga: 'Rp 500.000',
+      img: './ornamenpatrapunggel.png' 
+    },
+    { 
+      id: 8, 
+      judul: 'Panel Relief Kayu Ikan Koi & Bunga Teratai Size 60x100cm', 
+      desc: 'Hadirkan simbol kemakmuran, keberuntungan, dan ketenangan alam ke dalam hunian Anda melalui Panel Relief Kayu "Ikan Koi & Bunga Teratai".', 
+      detail: 'Sangat ideal dipasang sebagai focal point atau hiasan dinding eksklusif di ruang tamu, ruang keluarga, lobi hotel, restoran, maupun kolam renang indoor berkonsep etnik dan natural.',
+      kategori: '1pcs',
+      harga: 'Rp 600.000',
+      img: './reliefkoi.png' 
+    },
+    { 
+      id: 9, 
+      judul: 'Panel Relief Kayu Burung Bangau di Kolam Teratai Size 60x100cm', 
+      desc: 'Hadirkan suasana alam pedesaan Bali yang tenang, asri, dan penuh kedamaian ke dalam ruangan Anda melalui Panel Relief Kayu "Burung Bangau di Kolam Teratai".',
+      detail: 'Dikerjakan secara manual (hand-carved) penuh ketelitian oleh pengrajin ukir kayu lokal Bali yang berpengalaman, menghasilkan detail relief yang sangat hidup dan artistik.',
+      kategori: 'Custom / 1pcs',
+      harga: 'Rp 600.000',
+      img: './burungbangau.png' 
+    },
+    { 
+      id: 10, 
+      judul: 'Panel Relief Kayu Dewa Kresna Size 60x100cm ', 
+      desc: 'Hadirkan nuansa spiritual yang sakral dan estetika seni klasik yang tinggi ke dalam ruangan Anda melalui Panel Relief Kayu Dewa Kresna Menyayikan Seruling', 
+      detail: 'Dibuat dengan teknik ukir tangan (hand-carved) penuh ketelitian oleh pengrajin lokal Bali, panel ini memiliki kedalaman relief 3D yang sangat elegan dengan latar bertekstur khas.',
+      kategori: 'Per Pcs',
+      harga: 'Rp 600.000',
+      img: './dewakresna.png' 
+    },
+    { 
+      id: 11, 
+      judul: 'Panel Relief Kayu Burung Bangau & Kolam Teratai Dinamis Size 50x100cm', 
+      desc: 'Hadirkan dinamika kehidupan alam liar yang elegan ke dalam interior Anda melalui Panel Relief Kayu "Burung Bangau & Kolam Teratai Dinamis".', 
+      detail: 'Sangat cocok dipasang sebagai hiasan dinding eksklusif atau focal point di ruang tamu, ruang keluarga, lobi hotel, resor, maupun ruang makan yang mengusung tema alam dan estetika etnik tropis.',
+      kategori: 'Per Pcs',
+      harga: 'Rp 500.000',
+      img: './burungbangaukolamteratai.png' 
+    },
+    { 
+      id: 12, 
+      judul: 'Balinese Carved Pillar Panel Size 50x100cm', 
+      desc: 'Terbuat dari kayu pilihan berkualitas tinggi, set panel ini menampilkan keindahan ukiran tangan tradisional khas Bali dengan pola daun melingkar yang mengalir dinamis dan simetris.', 
+      detail: 'Dikerjakan sepenuhnya oleh pengrajin lokal berpengalaman, setiap detail ukiran 3D dipahat dengan presisi tinggi untuk menghadirkan kesan mewah, elegan, dan etnik. Sangat ideal diaplikasikan sebagai pelapis pilar/tiang bangunan, dekorasi sudut ruangan, pilar lobi hotel, restoran, maupun hunian bergaya tropis modern.',
+      kategori: 'Per Pcs',
+      harga: 'Rp 500.000',
       img: './balinesecarved.png' 
     }
   ];
